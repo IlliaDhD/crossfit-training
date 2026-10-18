@@ -1,0 +1,18 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.0
+    container_name: crossfit_keycloak
+    command: start-dev --import-realm
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: admin
+      # токени завжди матимуть iss = http://localhost:8080/realms/crossfit
+      KC_HOSTNAME: http://localhost:8080
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./keycloak/realm-export.json:/opt/keycloak/data/import/realm-export.json:ro
+      - keycloak_data:/opt/keycloak/data
+
+volumes:
+  keycloak_data:

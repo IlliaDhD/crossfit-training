@@ -1,0 +1,56 @@
+{
+  "realm": "crossfit",
+  "enabled": true,
+  "sslRequired": "none",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "roles": {
+    "realm": [
+      { "name": "coach", "description": "Тренер" },
+      { "name": "athlete", "description": "Атлет" }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "crossfit-frontend",
+      "name": "CrossFit Frontend",
+      "enabled": true,
+      "protocol": "openid-connect",
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": false,
+      "serviceAccountsEnabled": false,
+      "rootUrl": "http://localhost:4200",
+      "baseUrl": "http://localhost:4200",
+      "redirectUris": ["http://localhost:4200/*"],
+      "webOrigins": ["http://localhost:4200"],
+      "attributes": {
+        "pkce.code.challenge.method": "S256",
+        "post.logout.redirect.uris": "http://localhost:4200/*"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "coach",
+      "email": "coach@example.com",
+      "firstName": "Test",
+      "lastName": "Coach",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [{ "type": "password", "value": "coach123", "temporary": false }],
+      "realmRoles": ["coach"]
+    },
+    {
+      "username": "athlete",
+      "email": "athlete@example.com",
+      "firstName": "Test",
+      "lastName": "Athlete",
+      "enabled": true,
+      "emailVerified": true,
+      "credentials": [{ "type": "password", "value": "athlete123", "temporary": false }],
+      "realmRoles": ["athlete"]
+    }
+  ]
+}
