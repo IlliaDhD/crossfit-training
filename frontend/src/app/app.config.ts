@@ -12,7 +12,7 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideKeycloak({
       config: {
-        url: 'http://localhost:8080',
+        url: 'http://localhost:8080',  // chagne to env variable
         realm: 'crossfit',
         clientId: 'crossfit-frontend',
       },
