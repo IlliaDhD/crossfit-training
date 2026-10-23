@@ -1,5 +1,7 @@
-from crosfit_training_backend.models.workout import Workout
+from crosfit_training_backend.models.complex import Complex
+from crosfit_training_backend.models.exercise import Exercise
+from crosfit_training_backend.models.training import Training
 
-DOCUMENT_MODELS = [Workout]
+DOCUMENT_MODELS = [Exercise, Complex, Training]
 
-__all__ = ["DOCUMENT_MODELS", "Workout"]
+__all__ = ["DOCUMENT_MODELS", "Complex", "Exercise", "Training"]
