@@ -6,7 +6,7 @@ services:
     environment:
       KC_BOOTSTRAP_ADMIN_USERNAME: admin
       KC_BOOTSTRAP_ADMIN_PASSWORD: admin
-      # токени завжди матимуть iss = http://localhost:8080/realms/crossfit
+      # tokens will always have iss = http://localhost:8080/realms/crossfit
       KC_HOSTNAME: http://localhost:8080
     ports:
       - "8080:8080"
@@ -14,5 +14,22 @@ services:
       - ./keycloak/realm-export.json:/opt/keycloak/data/import/realm-export.json:ro
       - keycloak_data:/opt/keycloak/data
 
+  mongo:
+    image: mongo:8
+    container_name: crossfit_mongo
+    # No login or password required (for development only): 127.0.0.1 opens the port only
+    # on your computer, not for other devices on the network
+    ports:
+      - "127.0.0.1:27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test:
+        ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
 volumes:
   keycloak_data:
+  mongo_data:
