@@ -6,7 +6,7 @@ from fastapi import APIRouter, HTTPException, Query, Response, status
 from pymongo.errors import DuplicateKeyError
 
 from crosfit_training_backend.api.dependencies import AdminUser, CurrentUser
-from crosfit_training_backend.api.schemas.exercise_catalog import (
+from crosfit_training_backend.api.schemas.exercise import (
     ExerciseIn,
     ExerciseListOut,
     ExerciseOut,
@@ -15,6 +15,7 @@ from crosfit_training_backend.api.schemas.exercise_catalog import (
     Modality,
     MovementPattern,
 )
+from crosfit_training_backend.exceptions import NotFoundError
 from crosfit_training_backend.models.exercise import Exercise
 from crosfit_training_backend.services.exercises import (
     build_search_terms,
@@ -29,7 +30,7 @@ SEARCH_LIMIT = 10
 async def _get_or_404(exercise_id: PydanticObjectId) -> Exercise:
     exercise = await Exercise.get(exercise_id)
     if exercise is None:
-        raise HTTPException(status.HTTP_404_NOT_FOUND, "Exercise not found")
+        raise NotFoundError("Exercise not found")
     return exercise
 
 
