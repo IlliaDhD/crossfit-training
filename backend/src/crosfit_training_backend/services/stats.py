@@ -8,6 +8,7 @@ import datetime as dt
 from uuid import UUID
 
 from crosfit_training_backend.models.training import Training
+from crosfit_training_backend.services.trainings import iso_date_range
 
 
 async def weekly_tonnage(
@@ -20,12 +21,7 @@ async def weekly_tonnage(
     Both dates are inclusive. `date` is an ISO string, so string comparison works.
     """
     match: dict = {"user_id": user_id}
-    date_range: dict = {}
-    if date_from:
-        date_range["$gte"] = date_from.isoformat()
-    if date_to:
-        date_range["$lte"] = date_to.isoformat()
-    if date_range:
+    if date_range := iso_date_range(date_from, date_to):
         match["date"] = date_range
 
     parsed_date = {"$dateFromString": {"dateString": "$date"}}

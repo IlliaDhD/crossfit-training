@@ -4,7 +4,7 @@ from beanie import Document
 from pydantic import Field
 from pymongo import ASCENDING, IndexModel
 
-from crosfit_training_backend.api.schemas.exercise_catalog import (
+from crosfit_training_backend.api.schemas.exercise import (
     ExerciseName,
     Modality,
     MovementPattern,
