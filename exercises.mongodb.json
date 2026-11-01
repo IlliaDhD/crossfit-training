@@ -1,0 +1,7738 @@
+[
+  {
+    "slug": "run",
+    "name": "Run",
+    "search_terms": [
+      "run",
+      "біг",
+      "running"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "burpee",
+    "name": "Burpee",
+    "search_terms": [
+      "burpee",
+      "бурпі"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core",
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "push-up",
+    "name": "Push-Ups",
+    "search_terms": [
+      "push-ups",
+      "push ups",
+      "push",
+      "push up",
+      "pushup",
+      "push-up",
+      "pushups",
+      "віджимання від підлоги",
+      "віджимання",
+      "підлоги"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "pull-up",
+    "name": "Pull-Up",
+    "search_terms": [
+      "pull-up",
+      "pull up",
+      "pull",
+      "pullup",
+      "pullups",
+      "pull-ups",
+      "pull ups",
+      "підтягування",
+      "pu"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-swing",
+    "name": "Kettlebell Swing",
+    "search_terms": [
+      "kettlebell swing",
+      "kettlebell",
+      "swing",
+      "kb swing",
+      "kb",
+      "kettlebell-swing",
+      "махи гирі",
+      "махи",
+      "гирі"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "lower_back",
+      "core",
+      "shoulders",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "deadlift",
+    "name": "Deadlift",
+    "search_terms": [
+      "deadlift",
+      "станова тяга",
+      "станова",
+      "тяга",
+      "dl"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "row",
+    "name": "Row",
+    "search_terms": [
+      "row",
+      "гребля",
+      "rowing",
+      "rower",
+      "rowing machine",
+      "machine"
+    ],
+    "modality": "M",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "lats",
+      "upper_back",
+      "biceps",
+      "core"
+    ],
+    "equipment": [
+      "rower"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "double-unders-jump-rope",
+    "name": "Double Unders Jump Rope",
+    "search_terms": [
+      "double unders jump rope",
+      "double",
+      "unders jump rope",
+      "unders",
+      "jump rope",
+      "jump",
+      "rope",
+      "double under jump rope",
+      "under jump rope",
+      "under",
+      "double-unders-jump-rope",
+      "подвійні стрибки на скакалці",
+      "подвійні",
+      "стрибки на скакалці",
+      "стрибки",
+      "скакалці",
+      "du",
+      "double under",
+      "double unders",
+      "double-under",
+      "скакалка"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "calves",
+      "quads",
+      "glutes",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "skipping rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "sit-up",
+    "name": "Sit-Up",
+    "search_terms": [
+      "sit-up",
+      "sit up",
+      "sit",
+      "situp",
+      "situps",
+      "sit-ups",
+      "sit ups",
+      "підйоми корпусу для пресу",
+      "підйоми",
+      "корпусу для пресу",
+      "корпусу",
+      "для пресу",
+      "для",
+      "пресу"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "air-squat",
+    "name": "Air Squat",
+    "search_terms": [
+      "air squat",
+      "air",
+      "squat",
+      "air-squat",
+      "повітряні присідання",
+      "повітряні",
+      "присідання"
+    ],
+    "modality": "G",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "box-jump",
+    "name": "Box Jump",
+    "search_terms": [
+      "box jump",
+      "box",
+      "jump",
+      "box-jump",
+      "стрибки на тумбу",
+      "стрибки",
+      "тумбу",
+      "bj"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [
+      "box jumps"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "rest",
+    "name": "Rest",
+    "search_terms": [
+      "rest",
+      "відпочинок"
+    ],
+    "modality": "M",
+    "movement_pattern": "other",
+    "muscle_groups": [],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "wall-ball",
+    "name": "Wall Ball",
+    "search_terms": [
+      "wall ball",
+      "wall",
+      "ball",
+      "wall-ball",
+      "кидки набивного м'яча у ціль",
+      "кидки",
+      "набивного м'яча у ціль",
+      "набивного",
+      "м'яча у ціль",
+      "м'яча",
+      "ціль"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "medicine ball"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "thruster",
+    "name": "Thruster",
+    "search_terms": [
+      "thruster",
+      "викиди штанги",
+      "викиди",
+      "штанги"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "toes-to-bar",
+    "name": "Toes-to-bar",
+    "search_terms": [
+      "toes-to-bar",
+      "toes to bar",
+      "toes",
+      "bar",
+      "носки до перекладини",
+      "носки",
+      "перекладини",
+      "ttb",
+      "t2b"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "handstand-push-up",
+    "name": "Handstand Push-up",
+    "search_terms": [
+      "handstand push-up",
+      "handstand",
+      "push-up",
+      "handstand push up",
+      "push up",
+      "push",
+      "handstand pushup",
+      "pushup",
+      "handstand pushups",
+      "pushups",
+      "handstand push-ups",
+      "push-ups",
+      "handstand push ups",
+      "push ups",
+      "hspu",
+      "handstand-push-up",
+      "віджимання в стійці на руках ( вниз головою)",
+      "віджимання",
+      "стійці на руках ( вниз головою)",
+      "стійці",
+      "руках ( вниз головою)",
+      "руках",
+      "вниз головою)",
+      "вниз",
+      "головою)",
+      "віджимання в стійці на руках вниз головою",
+      "стійці на руках вниз головою",
+      "руках вниз головою",
+      "вниз головою",
+      "головою"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "back-squat",
+    "name": "Back Squat",
+    "search_terms": [
+      "back squat",
+      "back",
+      "squat",
+      "back-squat",
+      "присідання зі штангою на спині",
+      "присідання",
+      "штангою на спині",
+      "штангою",
+      "спині",
+      "bs"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "push-press",
+    "name": "Push Press",
+    "search_terms": [
+      "push press",
+      "push",
+      "press",
+      "push-press",
+      "швунг жимовий",
+      "швунг",
+      "жимовий",
+      "pp"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "walking-lunge",
+    "name": "Walking Lunge",
+    "search_terms": [
+      "walking lunge",
+      "walking",
+      "lunge",
+      "walking-lunge",
+      "ходьба випадами",
+      "ходьба",
+      "випадами"
+    ],
+    "modality": "G",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "overhead-squat",
+    "name": "Overhead Squat",
+    "search_terms": [
+      "overhead squat",
+      "overhead",
+      "squat",
+      "overhead-squat",
+      "присідання з утриманням штанги над головою",
+      "присідання",
+      "утриманням штанги над головою",
+      "утриманням",
+      "штанги над головою",
+      "штанги",
+      "над головою",
+      "над",
+      "головою",
+      "ohs"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "front-squat",
+    "name": "Front Squat",
+    "search_terms": [
+      "front squat",
+      "front",
+      "squat",
+      "front-squat",
+      "присідання зі штангою на грудях",
+      "присідання",
+      "штангою на грудях",
+      "штангою",
+      "грудях",
+      "fs"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "jump-rope-single",
+    "name": "Jump Rope Single",
+    "search_terms": [
+      "jump rope single",
+      "jump",
+      "rope single",
+      "rope",
+      "single",
+      "jump-rope-single",
+      "стрибки на скакалці",
+      "стрибки",
+      "скакалці",
+      "single unders",
+      "unders",
+      "single under",
+      "under",
+      "su",
+      "jump rope",
+      "скакалка"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "calves",
+      "quads",
+      "glutes",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "skipping rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "bench-press",
+    "name": "Bench press",
+    "search_terms": [
+      "bench press",
+      "bench",
+      "press",
+      "bench-press",
+      "жим штанги лежачи",
+      "жим",
+      "штанги лежачи",
+      "штанги",
+      "лежачи",
+      "bp"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate",
+      "bench",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "clean-and-jerk",
+    "name": "Clean and Jerk",
+    "search_terms": [
+      "clean and jerk",
+      "clean",
+      "jerk",
+      "clean-and-jerk",
+      "взяття штанги на груди та поштовх штанги",
+      "взяття",
+      "штанги на груди та поштовх штанги",
+      "штанги",
+      "груди та поштовх штанги",
+      "груди",
+      "поштовх штанги",
+      "поштовх",
+      "c&j",
+      "c and j",
+      "clean & jerk",
+      "clean jerk",
+      "cj"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-dip",
+    "name": "Ring Dip",
+    "search_terms": [
+      "ring dip",
+      "ring",
+      "dip",
+      "ring-dip",
+      "віджимання на гімнастичних кільцях",
+      "віджимання",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "power-clean",
+    "name": "Power Clean",
+    "search_terms": [
+      "power clean",
+      "power",
+      "clean",
+      "power-clean",
+      "силове взяття на груди штанги",
+      "силове",
+      "взяття на груди штанги",
+      "взяття",
+      "груди штанги",
+      "груди",
+      "штанги",
+      "pc"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "knees-elbows",
+    "name": "Knees to Elbows",
+    "search_terms": [
+      "knees to elbows",
+      "knees",
+      "elbows",
+      "knees-elbows",
+      "knees elbows",
+      "коліна до ліктів на перекладині",
+      "коліна",
+      "ліктів на перекладині",
+      "ліктів",
+      "перекладині",
+      "kte",
+      "k2e"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "sumo-deadlift-high-pull",
+    "name": "Sumo Deadlift High Pull",
+    "search_terms": [
+      "sumo deadlift high pull",
+      "sumo",
+      "deadlift high pull",
+      "deadlift",
+      "high pull",
+      "high",
+      "pull",
+      "sumo-deadlift-high-pull",
+      "станова тяга зі стійки сумо до підборіддя",
+      "станова",
+      "тяга зі стійки сумо до підборіддя",
+      "тяга",
+      "стійки сумо до підборіддя",
+      "стійки",
+      "сумо до підборіддя",
+      "сумо",
+      "підборіддя",
+      "sdhp"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-muscle-up",
+    "name": "Ring Muscle-up",
+    "search_terms": [
+      "ring muscle-up",
+      "ring",
+      "muscle-up",
+      "ring muscle up",
+      "muscle up",
+      "muscle",
+      "ring muscleup",
+      "muscleup",
+      "ring muscleups",
+      "muscleups",
+      "ring muscle-ups",
+      "muscle-ups",
+      "ring muscle ups",
+      "muscle ups",
+      "ring-muscle-up",
+      "вихід на гімнастичних кільцях",
+      "вихід",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях",
+      "mu",
+      "rmu"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "chest",
+      "triceps",
+      "shoulders",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "bar-dip",
+    "name": "Bar Dip",
+    "search_terms": [
+      "bar dip",
+      "bar",
+      "dip",
+      "bar-dip",
+      "віджимання на брусах",
+      "віджимання",
+      "брусах"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "strict-pull-up",
+    "name": "Strict Pull-Up",
+    "search_terms": [
+      "strict pull-up",
+      "strict",
+      "pull-up",
+      "strict pull up",
+      "pull up",
+      "pull",
+      "strict pullup",
+      "pullup",
+      "strict pullups",
+      "pullups",
+      "strict pull-ups",
+      "pull-ups",
+      "strict pull ups",
+      "pull ups",
+      "strict-pull-up",
+      "строгі підтягування",
+      "строгі",
+      "підтягування"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "parallel bars",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "jumping-jack",
+    "name": "Jumping Jack",
+    "search_terms": [
+      "jumping jack",
+      "jumping",
+      "jack",
+      "jumping-jack",
+      "стрибунець"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "calves",
+      "quads",
+      "glutes",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "push-jerk",
+    "name": "Push Jerk",
+    "search_terms": [
+      "push jerk",
+      "push",
+      "jerk",
+      "push-jerk",
+      "швунг поштовховий від груди",
+      "швунг",
+      "поштовховий від груди",
+      "поштовховий",
+      "груди",
+      "pj"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hand-release-push-up",
+    "name": "Hand Release Push-Up",
+    "search_terms": [
+      "hand release push-up",
+      "hand",
+      "release push-up",
+      "release",
+      "push-up",
+      "hand release push up",
+      "release push up",
+      "push up",
+      "push",
+      "hand release pushup",
+      "release pushup",
+      "pushup",
+      "hand release pushups",
+      "release pushups",
+      "pushups",
+      "hand release push-ups",
+      "release push-ups",
+      "push-ups",
+      "hand release push ups",
+      "release push ups",
+      "push ups",
+      "hand-release-push-up",
+      "віджимання з відривом ладоней у нижній позиціі",
+      "віджимання",
+      "відривом ладоней у нижній позиціі",
+      "відривом",
+      "ладоней у нижній позиціі",
+      "ладоней",
+      "нижній позиціі",
+      "нижній",
+      "позиціі"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "ghd-sit-up",
+    "name": "GHD Sit-up",
+    "search_terms": [
+      "ghd sit-up",
+      "ghd",
+      "sit-up",
+      "ghd sit up",
+      "sit up",
+      "sit",
+      "ghd situp",
+      "situp",
+      "ghd situps",
+      "situps",
+      "ghd sit-ups",
+      "sit-ups",
+      "ghd sit ups",
+      "sit ups",
+      "ghd-sit-up",
+      "сітапи в тренажері ghd",
+      "сітапи",
+      "тренажері ghd",
+      "тренажері"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "ghd"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-snatch",
+    "name": "Kettlebell Snatch",
+    "search_terms": [
+      "kettlebell snatch",
+      "kettlebell",
+      "snatch",
+      "kb snatch",
+      "kb",
+      "kettlebell-snatch",
+      "ривок гирі",
+      "ривок",
+      "гирі"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "plank",
+    "name": "Plank",
+    "search_terms": [
+      "plank",
+      "утримання планки",
+      "утримання",
+      "планки"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "shoulders",
+      "triceps",
+      "quads"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "shoulder-press",
+    "name": "Shoulder Press",
+    "search_terms": [
+      "shoulder press",
+      "shoulder",
+      "press",
+      "shoulder-press",
+      "жим стоячи",
+      "жим",
+      "стоячи",
+      "strict press",
+      "strict",
+      "military press",
+      "military",
+      "ohp"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "pistol-squat",
+    "name": "Pistol Squat",
+    "search_terms": [
+      "pistol squat",
+      "pistol",
+      "squat",
+      "pistol-squat",
+      "присідання на одній нозі (пістолетик)",
+      "присідання",
+      "одній нозі (пістолетик)",
+      "одній",
+      "нозі (пістолетик)",
+      "нозі",
+      "(пістолетик)",
+      "присідання на одній нозі пістолетик",
+      "одній нозі пістолетик",
+      "нозі пістолетик",
+      "пістолетик",
+      "single leg squat",
+      "single",
+      "leg squat",
+      "leg"
+    ],
+    "modality": "G",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "sit-up-abmat",
+    "name": "Sit-up abmat",
+    "search_terms": [
+      "sit-up abmat",
+      "sit-up",
+      "abmat",
+      "sit up abmat",
+      "sit",
+      "situp abmat",
+      "situp",
+      "situps abmat",
+      "situps",
+      "sit-ups abmat",
+      "sit-ups",
+      "sit ups abmat",
+      "sit-up-abmat",
+      "прес (ситап-прес) на абматі",
+      "прес",
+      "(ситап-прес) на абматі",
+      "(ситап-прес)",
+      "абматі",
+      "прес ситап прес на абматі",
+      "ситап прес на абматі",
+      "ситап",
+      "прес на абматі",
+      "abmat sit-up",
+      "abmat sit up",
+      "sit up",
+      "abmat situp",
+      "abmat situps",
+      "abmat sit-ups",
+      "abmat sit ups",
+      "sit ups"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "rope-climb",
+    "name": "Rope Climb",
+    "search_terms": [
+      "rope climb",
+      "rope",
+      "climb",
+      "rope-climb",
+      "підйом по канату з поміччю ніг",
+      "підйом",
+      "канату з поміччю ніг",
+      "канату",
+      "поміччю ніг",
+      "поміччю",
+      "ніг"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core",
+      "quads",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "climbing rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "mountain-climber",
+    "name": "Mountain Climber",
+    "search_terms": [
+      "mountain climber",
+      "mountain",
+      "climber",
+      "mountain-climber",
+      "біг в упорі лежачи",
+      "біг",
+      "упорі лежачи",
+      "упорі",
+      "лежачи"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "shoulders",
+      "triceps",
+      "quads"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "hang-power-clean",
+    "name": "Hang Power Clean",
+    "search_terms": [
+      "hang power clean",
+      "hang",
+      "power clean",
+      "power",
+      "clean",
+      "hang-power-clean",
+      "силове взяття на груди з вису",
+      "силове",
+      "взяття на груди з вису",
+      "взяття",
+      "груди з вису",
+      "груди",
+      "вису"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "chest-bar-pull-up",
+    "name": "Chest-To-Bar Pull-Up",
+    "search_terms": [
+      "chest-to-bar pull-up",
+      "chest-to-bar",
+      "pull-up",
+      "chest to bar pull up",
+      "chest",
+      "bar pull up",
+      "bar",
+      "pull up",
+      "pull",
+      "chest to bar pullup",
+      "bar pullup",
+      "pullup",
+      "chest to bar pull-up",
+      "bar pull-up",
+      "chest to bar pullups",
+      "bar pullups",
+      "pullups",
+      "chest to bar pull-ups",
+      "bar pull-ups",
+      "pull-ups",
+      "chest to bar pull ups",
+      "bar pull ups",
+      "pull ups",
+      "chest-bar-pull-up",
+      "chest bar pull up",
+      "chest bar pullup",
+      "chest bar pull-up",
+      "chest bar pullups",
+      "chest bar pull-ups",
+      "chest bar pull ups",
+      "підтягування груди до перекладини",
+      "підтягування",
+      "груди до перекладини",
+      "груди",
+      "перекладини",
+      "c2b",
+      "chest to bar",
+      "ctb"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "v-ups",
+    "name": "V Ups",
+    "search_terms": [
+      "v ups",
+      "v up",
+      "v-ups",
+      "складка"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "squat-clean",
+    "name": "Squat Clean",
+    "search_terms": [
+      "squat clean",
+      "squat",
+      "clean",
+      "squat-clean",
+      "взяття штанги на груди в положення присідання",
+      "взяття",
+      "штанги на груди в положення присідання",
+      "штанги",
+      "груди в положення присідання",
+      "груди",
+      "положення присідання",
+      "положення",
+      "присідання"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "power-snatch",
+    "name": "Power Snatch",
+    "search_terms": [
+      "power snatch",
+      "power",
+      "snatch",
+      "power-snatch",
+      "силовий ривок штанги",
+      "силовий",
+      "ривок штанги",
+      "ривок",
+      "штанги",
+      "psn"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "burpee-pull-up",
+    "name": "Burpee Pull-Up",
+    "search_terms": [
+      "burpee pull-up",
+      "burpee",
+      "pull-up",
+      "burpee pull up",
+      "pull up",
+      "pull",
+      "burpee pullup",
+      "pullup",
+      "burpee pullups",
+      "pullups",
+      "burpee pull-ups",
+      "pull-ups",
+      "burpee pull ups",
+      "pull ups",
+      "burpee-pull-up",
+      "бурпі з підтягуванням",
+      "бурпі",
+      "підтягуванням"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "lats",
+      "biceps",
+      "forearms",
+      "core",
+      "quads",
+      "glutes"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "farmers-walk",
+    "name": "Farmers walk",
+    "search_terms": [
+      "farmers walk",
+      "farmers",
+      "walk",
+      "farmers-walk",
+      "прогулянка фермера",
+      "прогулянка",
+      "фермера",
+      "farmer's walk",
+      "farmer's",
+      "farmer carry",
+      "farmer",
+      "carry",
+      "farmers carry"
+    ],
+    "modality": "W",
+    "movement_pattern": "carry",
+    "muscle_groups": [
+      "forearms",
+      "traps",
+      "upper_back",
+      "core",
+      "glutes",
+      "quads",
+      "calves"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "clean",
+    "name": "Clean",
+    "search_terms": [
+      "clean",
+      "взяття штанги на груди",
+      "взяття",
+      "штанги на груди",
+      "штанги",
+      "груди",
+      "cln"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "burpee-box-jump-overs",
+    "name": "Burpee Box Jump Overs",
+    "search_terms": [
+      "burpee box jump overs",
+      "burpee",
+      "box jump overs",
+      "box",
+      "jump overs",
+      "jump",
+      "overs",
+      "burpee-box-jump-overs",
+      "бурпі з перестрибуванням тумби",
+      "бурпі",
+      "перестрибуванням тумби",
+      "перестрибуванням",
+      "тумби",
+      "bbjs"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core",
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "equipment": [
+      "box jumps"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "sprint",
+    "name": "Sprint",
+    "search_terms": [
+      "sprint",
+      "спрінт"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "burpee-bar-facing",
+    "name": "Burpee Bar-Facing",
+    "search_terms": [
+      "burpee bar-facing",
+      "burpee",
+      "bar-facing",
+      "burpee bar facing",
+      "bar facing",
+      "bar",
+      "facing",
+      "burpee-bar-facing",
+      "бурпі з перестрибуванням штанги",
+      "бурпі",
+      "перестрибуванням штанги",
+      "перестрибуванням",
+      "штанги"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core",
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "handstand-walk",
+    "name": "Handstand Walk",
+    "search_terms": [
+      "handstand walk",
+      "handstand",
+      "walk",
+      "handstand-walk",
+      "ходьба на руках",
+      "ходьба",
+      "руках",
+      "hsw"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "squat-jumps",
+    "name": "Squat Jumps",
+    "search_terms": [
+      "squat jumps",
+      "squat",
+      "jumps",
+      "squat jump",
+      "jump",
+      "squat-jumps",
+      "присідання с вистрибуванням",
+      "присідання",
+      "вистрибуванням"
+    ],
+    "modality": "G",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "ball-slams",
+    "name": "Ball Slams",
+    "search_terms": [
+      "ball slams",
+      "ball",
+      "slams",
+      "ball-slams",
+      "кидок м’яча об підлогу",
+      "кидок",
+      "м’яча об підлогу",
+      "м’яча",
+      "об підлогу",
+      "об",
+      "підлогу",
+      "кидок м'яча об підлогу",
+      "м'яча об підлогу",
+      "м'яча"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "lats",
+      "shoulders",
+      "triceps",
+      "core",
+      "glutes",
+      "quads"
+    ],
+    "equipment": [
+      "medicine ball"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "strict-handstand-push-up",
+    "name": "Strict Handstand Push-up",
+    "search_terms": [
+      "strict handstand push-up",
+      "strict",
+      "handstand push-up",
+      "handstand",
+      "push-up",
+      "strict handstand push up",
+      "handstand push up",
+      "push up",
+      "push",
+      "strict handstand pushup",
+      "handstand pushup",
+      "pushup",
+      "strict handstand pushups",
+      "handstand pushups",
+      "pushups",
+      "strict handstand push-ups",
+      "handstand push-ups",
+      "push-ups",
+      "strict handstand push ups",
+      "handstand push ups",
+      "push ups",
+      "hspu",
+      "strict-handstand-push-up",
+      "строгі віджимання в стійці на руках",
+      "строгі",
+      "віджимання в стійці на руках",
+      "віджимання",
+      "стійці на руках",
+      "стійці",
+      "руках"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "assault-air-bike",
+    "name": "Assault Air Bike",
+    "search_terms": [
+      "assault air bike",
+      "assault",
+      "air bike",
+      "air",
+      "bike",
+      "assault-air-bike",
+      "assault bike",
+      "велотренажер"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "shoulders",
+      "triceps",
+      "lats",
+      "core"
+    ],
+    "equipment": [
+      "bicycle"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "snatch",
+    "name": "Snatch",
+    "search_terms": [
+      "snatch",
+      "ривок",
+      "sn"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-snatch",
+    "name": "Dumbbell Snatch",
+    "search_terms": [
+      "dumbbell snatch",
+      "dumbbell",
+      "snatch",
+      "db snatch",
+      "db",
+      "dumbbell-snatch",
+      "ривок гантелі однією рукою",
+      "ривок",
+      "гантелі однією рукою",
+      "гантелі",
+      "однією рукою",
+      "однією",
+      "рукою"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "leg-raises",
+    "name": "Leg Raises",
+    "search_terms": [
+      "leg raises",
+      "leg",
+      "raises",
+      "leg-raises",
+      "підйом ног лежачи",
+      "підйом",
+      "ног лежачи",
+      "ног",
+      "лежачи"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "bar-muscle-up",
+    "name": "Bar Muscle-Up",
+    "search_terms": [
+      "bar muscle-up",
+      "bar",
+      "muscle-up",
+      "bar muscle up",
+      "muscle up",
+      "muscle",
+      "bar muscleup",
+      "muscleup",
+      "bar muscleups",
+      "muscleups",
+      "bar muscle-ups",
+      "muscle-ups",
+      "bar muscle ups",
+      "muscle ups",
+      "bar-muscle-up",
+      "вихід силою на перекладині",
+      "вихід",
+      "силою на перекладині",
+      "силою",
+      "перекладині",
+      "bmu"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "chest",
+      "triceps",
+      "shoulders",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "weighted-lunges",
+    "name": "Weighted Lunges",
+    "search_terms": [
+      "weighted lunges",
+      "weighted",
+      "lunges",
+      "weighted lunge",
+      "lunge",
+      "weighted-lunges",
+      "випади з обтяженням",
+      "випади",
+      "обтяженням"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-clean-and-jerk",
+    "name": "Kettlebell Clean and Jerk",
+    "search_terms": [
+      "kettlebell clean and jerk",
+      "kettlebell",
+      "clean and jerk",
+      "clean",
+      "jerk",
+      "kb clean and jerk",
+      "kb",
+      "kettlebell-clean-and-jerk",
+      "поштовх гирі",
+      "поштовх",
+      "гирі"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "bicycling",
+    "name": "Bicycling",
+    "search_terms": [
+      "bicycling",
+      "їзда на велотренажері",
+      "їзда",
+      "велотренажері",
+      "cycling",
+      "bike",
+      "велосипед"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves"
+    ],
+    "equipment": [
+      "bicycle"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-push-press",
+    "name": "Dumbbell Push Press",
+    "search_terms": [
+      "dumbbell push press",
+      "dumbbell",
+      "push press",
+      "push",
+      "press",
+      "db push press",
+      "db",
+      "dumbbell-push-press",
+      "швунг жимовий гантелей",
+      "швунг",
+      "жимовий гантелей",
+      "жимовий",
+      "гантелей"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kipping-pull-up",
+    "name": "Kipping Pull-Up",
+    "search_terms": [
+      "kipping pull-up",
+      "kipping",
+      "pull-up",
+      "kipping pull up",
+      "pull up",
+      "pull",
+      "kipping pullup",
+      "pullup",
+      "kipping pullups",
+      "pullups",
+      "kipping pull-ups",
+      "pull-ups",
+      "kipping pull ups",
+      "pull ups",
+      "kipping-pull-up",
+      "кіпінг підтягування",
+      "кіпінг",
+      "підтягування"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-thruster",
+    "name": "Dumbbell Thruster",
+    "search_terms": [
+      "dumbbell thruster",
+      "dumbbell",
+      "thruster",
+      "db thruster",
+      "db",
+      "dumbbell-thruster",
+      "викиди з гантелями",
+      "викиди",
+      "гантелями"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "crunch",
+    "name": "Crunch",
+    "search_terms": [
+      "crunch",
+      "скручування"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-power-snatch",
+    "name": "Dumbbell Power Snatch",
+    "search_terms": [
+      "dumbbell power snatch",
+      "dumbbell",
+      "power snatch",
+      "power",
+      "snatch",
+      "db power snatch",
+      "db",
+      "dumbbell-power-snatch",
+      "силовий ривок гантелі",
+      "силовий",
+      "ривок гантелі",
+      "ривок",
+      "гантелі",
+      "db psn",
+      "psn"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "goblet-squat",
+    "name": "Goblet Squat",
+    "search_terms": [
+      "goblet squat",
+      "goblet",
+      "squat",
+      "goblet-squat",
+      "присідання гоблет",
+      "присідання",
+      "гоблет"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "back-extensions",
+    "name": "Back Extensions",
+    "search_terms": [
+      "back extensions",
+      "back",
+      "extensions",
+      "back-extensions",
+      "гіперекстензія",
+      "hyperextension"
+    ],
+    "modality": "G",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "lower_back",
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "alternating-dumbbell-snatches",
+    "name": "Alternating dumbbell snatches",
+    "search_terms": [
+      "alternating dumbbell snatches",
+      "alternating",
+      "dumbbell snatches",
+      "dumbbell",
+      "snatches",
+      "alternating dumbbell snatch",
+      "dumbbell snatch",
+      "snatch",
+      "alternating db snatch",
+      "db snatch",
+      "db",
+      "alternating-dumbbell-snatches",
+      "поперемінні ривки гантелі",
+      "поперемінні",
+      "ривки гантелі",
+      "ривки",
+      "гантелі"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "bent-barbell-row",
+    "name": "Bent Barbell Row",
+    "search_terms": [
+      "bent barbell row",
+      "bent",
+      "barbell row",
+      "barbell",
+      "row",
+      "bent-barbell-row",
+      "тяга штанги в нахилі",
+      "тяга",
+      "штанги в нахилі",
+      "штанги",
+      "нахилі"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hang-clean",
+    "name": "Hang Clean",
+    "search_terms": [
+      "hang clean",
+      "hang",
+      "clean",
+      "hang-clean",
+      "взяття на груди з вису",
+      "взяття",
+      "груди з вису",
+      "груди",
+      "вису"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "overhead-lunge",
+    "name": "Overhead Lunge",
+    "search_terms": [
+      "overhead lunge",
+      "overhead",
+      "lunge",
+      "overhead-lunge",
+      "випади з утриманням ваги над головою",
+      "випади",
+      "утриманням ваги над головою",
+      "утриманням",
+      "ваги над головою",
+      "ваги",
+      "над головою",
+      "над",
+      "головою"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hang-power-snatch",
+    "name": "Hang Power Snatch",
+    "search_terms": [
+      "hang power snatch",
+      "hang",
+      "power snatch",
+      "power",
+      "snatch",
+      "hang-power-snatch",
+      "силовий ривок штанги з вису",
+      "силовий",
+      "ривок штанги з вису",
+      "ривок",
+      "штанги з вису",
+      "штанги",
+      "вису"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "weighted-pull-up",
+    "name": "Weighted Pull-up",
+    "search_terms": [
+      "weighted pull-up",
+      "weighted",
+      "pull-up",
+      "weighted pull up",
+      "pull up",
+      "pull",
+      "weighted pullup",
+      "pullup",
+      "weighted pullups",
+      "pullups",
+      "weighted pull-ups",
+      "pull-ups",
+      "weighted pull ups",
+      "pull ups",
+      "weighted-pull-up",
+      "підтягування з обтяженням",
+      "підтягування",
+      "обтяженням"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "turkish-get-up",
+    "name": "Turkish Get-Up",
+    "search_terms": [
+      "turkish get-up",
+      "turkish",
+      "get-up",
+      "turkish get up",
+      "get up",
+      "get",
+      "turkish getup",
+      "getup",
+      "turkish getups",
+      "getups",
+      "turkish get-ups",
+      "get-ups",
+      "turkish get ups",
+      "get ups",
+      "turkish-get-up",
+      "турецький підйом",
+      "турецький",
+      "підйом",
+      "tgu"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "core",
+      "glutes",
+      "quads",
+      "hamstrings"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "shoulder-overhead-fs2oh",
+    "name": "Shoulder to Overhead-FS2OH",
+    "search_terms": [
+      "shoulder to overhead-fs2oh",
+      "shoulder",
+      "overhead-fs2oh",
+      "shoulder to overhead fs2oh",
+      "overhead fs2oh",
+      "overhead",
+      "fs2oh",
+      "shoulder-overhead-fs2oh",
+      "shoulder overhead fs2oh",
+      "положення з плечей у положення над головою",
+      "положення",
+      "плечей у положення над головою",
+      "плечей",
+      "положення над головою",
+      "над головою",
+      "над",
+      "головою",
+      "shoulder to overhead",
+      "s2oh",
+      "sto"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-push-jerk",
+    "name": "Kettlebell Push Jerk",
+    "search_terms": [
+      "kettlebell push jerk",
+      "kettlebell",
+      "push jerk",
+      "push",
+      "jerk",
+      "kb push jerk",
+      "kb",
+      "kettlebell-push-jerk",
+      "швунг поштовховий гирі",
+      "швунг",
+      "поштовховий гирі",
+      "поштовховий",
+      "гирі"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-sumo-deadlift-high-pull",
+    "name": "Kettlebell Sumo Deadlift High Pull",
+    "search_terms": [
+      "kettlebell sumo deadlift high pull",
+      "kettlebell",
+      "sumo deadlift high pull",
+      "sumo",
+      "deadlift high pull",
+      "deadlift",
+      "high pull",
+      "high",
+      "pull",
+      "kb sumo deadlift high pull",
+      "kb",
+      "kettlebell-sumo-deadlift-high-pull",
+      "тяга гирі з підлоги до підборіддя",
+      "тяга",
+      "гирі з підлоги до підборіддя",
+      "гирі",
+      "підлоги до підборіддя",
+      "підлоги",
+      "підборіддя"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-hang-clean-and-jerks",
+    "name": "Dumbbell Hang Clean and Jerks",
+    "search_terms": [
+      "dumbbell hang clean and jerks",
+      "dumbbell",
+      "hang clean and jerks",
+      "hang",
+      "clean and jerks",
+      "clean",
+      "jerks",
+      "dumbbell hang clean and jerk",
+      "hang clean and jerk",
+      "clean and jerk",
+      "jerk",
+      "db hang clean and jerk",
+      "db",
+      "dumbbell-hang-clean-and-jerks",
+      "взяття гантелі на груди з вису та поштовх",
+      "взяття",
+      "гантелі на груди з вису та поштовх",
+      "гантелі",
+      "груди з вису та поштовх",
+      "груди",
+      "вису та поштовх",
+      "вису",
+      "поштовх"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "alternating-kettlebell-snatch",
+    "name": "Alternating Kettlebell Snatch",
+    "search_terms": [
+      "alternating kettlebell snatch",
+      "alternating",
+      "kettlebell snatch",
+      "kettlebell",
+      "snatch",
+      "alternating kb snatch",
+      "kb snatch",
+      "kb",
+      "alternating-kettlebell-snatch",
+      "ривок гирі кожною рукою",
+      "ривок",
+      "гирі кожною рукою",
+      "гирі",
+      "кожною рукою",
+      "кожною",
+      "рукою"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "bear-crawl",
+    "name": "Bear Crawl",
+    "search_terms": [
+      "bear crawl",
+      "bear",
+      "crawl",
+      "bear-crawl",
+      "ведмежа хода",
+      "ведмежа",
+      "хода"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "chest",
+      "core",
+      "quads",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "one-arm-kettlebell-row",
+    "name": "One Arm Kettlebell Row",
+    "search_terms": [
+      "one arm kettlebell row",
+      "one",
+      "arm kettlebell row",
+      "arm",
+      "kettlebell row",
+      "kettlebell",
+      "row",
+      "one arm kb row",
+      "arm kb row",
+      "kb row",
+      "kb",
+      "one-arm-kettlebell-row",
+      "тяга гирі до поясу",
+      "тяга",
+      "гирі до поясу",
+      "гирі",
+      "поясу"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-push-up",
+    "name": "Ring Push-up",
+    "search_terms": [
+      "ring push-up",
+      "ring",
+      "push-up",
+      "ring push up",
+      "push up",
+      "push",
+      "ring pushup",
+      "pushup",
+      "ring pushups",
+      "pushups",
+      "ring push-ups",
+      "push-ups",
+      "ring push ups",
+      "push ups",
+      "ring-push-up",
+      "горизонтальні віджимання на гімнастичних кільцях",
+      "горизонтальні",
+      "віджимання на гімнастичних кільцях",
+      "віджимання",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-goblet-thruster",
+    "name": "Kettlebell Goblet Thruster",
+    "search_terms": [
+      "kettlebell goblet thruster",
+      "kettlebell",
+      "goblet thruster",
+      "goblet",
+      "thruster",
+      "kb goblet thruster",
+      "kb",
+      "kettlebell-goblet-thruster",
+      "викиди однієї гирі двома руками",
+      "викиди",
+      "однієї гирі двома руками",
+      "однієї",
+      "гирі двома руками",
+      "гирі",
+      "двома руками",
+      "двома",
+      "руками"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "shuttle-sprint",
+    "name": "Shuttle Sprint",
+    "search_terms": [
+      "shuttle sprint",
+      "shuttle",
+      "sprint",
+      "shuttle-sprint",
+      "човниковий біг",
+      "човниковий",
+      "біг"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "back-extension-ghd",
+    "name": "Back Extension GHD",
+    "search_terms": [
+      "back extension ghd",
+      "back",
+      "extension ghd",
+      "extension",
+      "ghd",
+      "back-extension-ghd",
+      "гіперекстензія на тренажері ghd",
+      "гіперекстензія",
+      "тренажері ghd",
+      "тренажері",
+      "ghd back extension",
+      "back extension",
+      "hyperextension"
+    ],
+    "modality": "G",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "lower_back",
+      "glutes",
+      "hamstrings"
+    ],
+    "equipment": [
+      "ghd"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "weighted-sit-up",
+    "name": "Weighted Sit-Up",
+    "search_terms": [
+      "weighted sit-up",
+      "weighted",
+      "sit-up",
+      "weighted sit up",
+      "sit up",
+      "sit",
+      "weighted situp",
+      "situp",
+      "weighted situps",
+      "situps",
+      "weighted sit-ups",
+      "sit-ups",
+      "weighted sit ups",
+      "sit ups",
+      "weighted-sit-up",
+      "прес (сітап-прес) з обтяженням",
+      "прес",
+      "(сітап-прес) з обтяженням",
+      "(сітап-прес)",
+      "обтяженням",
+      "прес сітап прес з обтяженням",
+      "сітап прес з обтяженням",
+      "сітап",
+      "прес з обтяженням"
+    ],
+    "modality": "W",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "barbell",
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "sandbag-carry",
+    "name": "Sandbag Carry",
+    "search_terms": [
+      "sandbag carry",
+      "sandbag",
+      "carry",
+      "sandbag-carry",
+      "перенесення мішка на плечі",
+      "перенесення",
+      "мішка на плечі",
+      "мішка",
+      "плечі"
+    ],
+    "modality": "W",
+    "movement_pattern": "carry",
+    "muscle_groups": [
+      "core",
+      "upper_back",
+      "traps",
+      "glutes",
+      "quads",
+      "hamstrings",
+      "calves"
+    ],
+    "equipment": [
+      "sandbag"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "chin-up",
+    "name": "Chin-Up",
+    "search_terms": [
+      "chin-up",
+      "chin up",
+      "chin",
+      "підтягування зворотнім хватом",
+      "підтягування",
+      "зворотнім хватом",
+      "зворотнім",
+      "хватом"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "swim",
+    "name": "Swim",
+    "search_terms": [
+      "swim",
+      "плавання",
+      "swimming"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "lats",
+      "shoulders",
+      "chest",
+      "triceps",
+      "core",
+      "glutes",
+      "quads"
+    ],
+    "equipment": [
+      "swimming pool"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "handstand",
+    "name": "Handstand",
+    "search_terms": [
+      "handstand",
+      "стійка на руках",
+      "стійка",
+      "руках"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "deficit-handstand-push-ups",
+    "name": "Deficit Handstand Push-Ups",
+    "search_terms": [
+      "deficit handstand push-ups",
+      "deficit",
+      "handstand push-ups",
+      "handstand",
+      "push-ups",
+      "deficit handstand push ups",
+      "handstand push ups",
+      "push ups",
+      "push",
+      "deficit handstand push up",
+      "handstand push up",
+      "push up",
+      "deficit handstand pushup",
+      "handstand pushup",
+      "pushup",
+      "deficit handstand push-up",
+      "handstand push-up",
+      "push-up",
+      "deficit handstand pushups",
+      "handstand pushups",
+      "pushups",
+      "hspu",
+      "deficit-handstand-push-ups",
+      "віджимання у стійці на руках нижче паралелі",
+      "віджимання",
+      "стійці на руках нижче паралелі",
+      "стійці",
+      "руках нижче паралелі",
+      "руках",
+      "нижче паралелі",
+      "нижче",
+      "паралелі"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "barbell plate",
+      "parallettes"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "tire-flip",
+    "name": "Tire Flip",
+    "search_terms": [
+      "tire flip",
+      "tire",
+      "flip",
+      "tire-flip",
+      "кантування шини",
+      "кантування",
+      "шини"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "lower_back",
+      "chest",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "tire"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "double-kettlebells-thrusters",
+    "name": "Double Kettlebells Thrusters",
+    "search_terms": [
+      "double kettlebells thrusters",
+      "double",
+      "kettlebells thrusters",
+      "kettlebells",
+      "thrusters",
+      "double kettlebell thruster",
+      "kettlebell thruster",
+      "kettlebell",
+      "thruster",
+      "double kb thruster",
+      "kb thruster",
+      "kb",
+      "double-kettlebells-thrusters",
+      "викиди двох гирь",
+      "викиди",
+      "двох гирь",
+      "двох",
+      "гирь"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "wall-climb",
+    "name": "Wall Climb",
+    "search_terms": [
+      "wall climb",
+      "wall",
+      "climb",
+      "wall-climb",
+      "підйом ногами по стіні",
+      "підйом",
+      "ногами по стіні",
+      "ногами",
+      "стіні",
+      "wall walk",
+      "walk"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "chest",
+      "core",
+      "quads",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "double-kettlebell-deadlift",
+    "name": "Double Kettlebell Deadlift",
+    "search_terms": [
+      "double kettlebell deadlift",
+      "double",
+      "kettlebell deadlift",
+      "kettlebell",
+      "deadlift",
+      "double kb deadlift",
+      "kb deadlift",
+      "kb",
+      "double-kettlebell-deadlift",
+      "станова тяга двох гирь",
+      "станова",
+      "тяга двох гирь",
+      "тяга",
+      "двох гирь",
+      "двох",
+      "гирь"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "l-sit-pull-up",
+    "name": "L-Sit Pull-Up",
+    "search_terms": [
+      "l-sit pull-up",
+      "l-sit",
+      "pull-up",
+      "l sit pull up",
+      "sit pull up",
+      "sit",
+      "pull up",
+      "pull",
+      "l sit pullup",
+      "sit pullup",
+      "pullup",
+      "l sit pull-up",
+      "sit pull-up",
+      "l sit pullups",
+      "sit pullups",
+      "pullups",
+      "l sit pull-ups",
+      "sit pull-ups",
+      "pull-ups",
+      "l sit pull ups",
+      "sit pull ups",
+      "pull ups",
+      "l-sit-pull-up",
+      "l - підтягування",
+      "підтягування",
+      "l підтягування"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "box-jump-overs",
+    "name": "Box Jump Overs",
+    "search_terms": [
+      "box jump overs",
+      "box",
+      "jump overs",
+      "jump",
+      "overs",
+      "box-jump-overs",
+      "перестрибування через тумбу",
+      "перестрибування",
+      "через тумбу",
+      "через",
+      "тумбу",
+      "bjos"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [
+      "box jumps"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "front-rack-lunge",
+    "name": "Front Rack Lunge",
+    "search_terms": [
+      "front rack lunge",
+      "front",
+      "rack lunge",
+      "rack",
+      "lunge",
+      "front-rack-lunge",
+      "випади з утриманням штанги на грудях",
+      "випади",
+      "утриманням штанги на грудях",
+      "утриманням",
+      "штанги на грудях",
+      "штанги",
+      "грудях"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "muscle-strict",
+    "name": "Muscle-up Strict",
+    "search_terms": [
+      "muscle-up strict",
+      "muscle-up",
+      "strict",
+      "muscle up strict",
+      "muscle",
+      "muscleup strict",
+      "muscleup",
+      "muscleups strict",
+      "muscleups",
+      "muscle-ups strict",
+      "muscle-ups",
+      "muscle ups strict",
+      "muscle-strict",
+      "muscle strict",
+      "строгі виходи на кільцях",
+      "строгі",
+      "виходи на кільцях",
+      "виходи",
+      "кільцях",
+      "strict ring muscle-up",
+      "ring muscle-up",
+      "ring",
+      "strict ring muscle up",
+      "ring muscle up",
+      "muscle up",
+      "strict ring muscleup",
+      "ring muscleup",
+      "strict ring muscleups",
+      "ring muscleups",
+      "strict ring muscle-ups",
+      "ring muscle-ups",
+      "strict ring muscle ups",
+      "ring muscle ups",
+      "muscle ups",
+      "rmu"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "chest",
+      "triceps",
+      "shoulders",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "standing-broad-jump",
+    "name": "Standing Broad Jump",
+    "search_terms": [
+      "standing broad jump",
+      "standing",
+      "broad jump",
+      "broad",
+      "jump",
+      "standing-broad-jump",
+      "стрибок з місця в довжину",
+      "стрибок",
+      "місця в довжину",
+      "місця",
+      "довжину"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "one-leg-squat",
+    "name": "One Leg Squat",
+    "search_terms": [
+      "one leg squat",
+      "one",
+      "leg squat",
+      "leg",
+      "squat",
+      "one-leg-squat",
+      "присідання на одній нозі",
+      "присідання",
+      "одній нозі",
+      "одній",
+      "нозі",
+      "single leg squat",
+      "single",
+      "pistol squat",
+      "pistol"
+    ],
+    "modality": "G",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "double-kettlebell-clean",
+    "name": "Double Kettlebell Clean",
+    "search_terms": [
+      "double kettlebell clean",
+      "double",
+      "kettlebell clean",
+      "kettlebell",
+      "clean",
+      "double kb clean",
+      "kb clean",
+      "kb",
+      "double-kettlebell-clean",
+      "взяття на груди двох гирь",
+      "взяття",
+      "груди двох гирь",
+      "груди",
+      "двох гирь",
+      "двох",
+      "гирь"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "body-row",
+    "name": "Body row",
+    "search_terms": [
+      "body row",
+      "body",
+      "row",
+      "body-row",
+      "підтягування горизонтальні",
+      "підтягування",
+      "горизонтальні",
+      "inverted row",
+      "inverted",
+      "australian pull-up",
+      "australian",
+      "pull-up",
+      "australian pull up",
+      "pull up",
+      "pull",
+      "australian pullup",
+      "pullup",
+      "australian pullups",
+      "pullups",
+      "australian pull-ups",
+      "pull-ups",
+      "australian pull ups",
+      "pull ups"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "atlas-stone-ground-shoulder",
+    "name": "Atlas Stone Ground to Shoulder",
+    "search_terms": [
+      "atlas stone ground to shoulder",
+      "atlas",
+      "stone ground to shoulder",
+      "stone",
+      "ground to shoulder",
+      "ground",
+      "shoulder",
+      "atlas-stone-ground-shoulder",
+      "atlas stone ground shoulder",
+      "stone ground shoulder",
+      "ground shoulder",
+      "підйом каменя атлас на плечі",
+      "підйом",
+      "каменя атлас на плечі",
+      "каменя",
+      "атлас на плечі",
+      "атлас",
+      "плечі"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "traps",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "stone"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "double-kettlebell-snatch",
+    "name": "Double Kettlebell Snatch",
+    "search_terms": [
+      "double kettlebell snatch",
+      "double",
+      "kettlebell snatch",
+      "kettlebell",
+      "snatch",
+      "double kb snatch",
+      "kb snatch",
+      "kb",
+      "double-kettlebell-snatch",
+      "ривок двох гирь",
+      "ривок",
+      "двох гирь",
+      "двох",
+      "гирь"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-row",
+    "name": "Ring Row",
+    "search_terms": [
+      "ring row",
+      "ring",
+      "row",
+      "ring-row",
+      "горизонтальні підтягування на гімнастичних кільцях",
+      "горизонтальні",
+      "підтягування на гімнастичних кільцях",
+      "підтягування",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings",
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-press",
+    "name": "Dumbbell Press",
+    "search_terms": [
+      "dumbbell press",
+      "dumbbell",
+      "press",
+      "db press",
+      "db",
+      "dumbbell-press",
+      "жим гантелі стоячи",
+      "жим",
+      "гантелі стоячи",
+      "гантелі",
+      "стоячи"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "jerk",
+    "name": "Jerk",
+    "search_terms": [
+      "jerk",
+      "поштовх штанги",
+      "поштовх",
+      "штанги"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-deadlifts",
+    "name": "Dumbbell Deadlifts",
+    "search_terms": [
+      "dumbbell deadlifts",
+      "dumbbell",
+      "deadlifts",
+      "dumbbell deadlift",
+      "deadlift",
+      "db deadlift",
+      "db",
+      "dumbbell-deadlifts",
+      "станова тяга гантелей",
+      "станова",
+      "тяга гантелей",
+      "тяга",
+      "гантелей"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "man-maker",
+    "name": "Man Maker",
+    "search_terms": [
+      "man maker",
+      "man",
+      "maker",
+      "man-maker",
+      "робляча людина",
+      "робляча",
+      "людина"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "lats",
+      "biceps",
+      "forearms",
+      "core",
+      "quads",
+      "glutes"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-squats",
+    "name": "Dumbbell squats",
+    "search_terms": [
+      "dumbbell squats",
+      "dumbbell",
+      "squats",
+      "dumbbell squat",
+      "squat",
+      "db squat",
+      "db",
+      "dumbbell-squats",
+      "присідання с гантелями",
+      "присідання",
+      "гантелями"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "rope-climb-legless",
+    "name": "Rope Climb Legless",
+    "search_terms": [
+      "rope climb legless",
+      "rope",
+      "climb legless",
+      "climb",
+      "legless",
+      "rope-climb-legless",
+      "підйом по канату без допомоги ніг",
+      "підйом",
+      "канату без допомоги ніг",
+      "канату",
+      "без допомоги ніг",
+      "без",
+      "допомоги ніг",
+      "допомоги",
+      "ніг"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "climbing rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "clapping-push-up",
+    "name": "Clapping Push-Up",
+    "search_terms": [
+      "clapping push-up",
+      "clapping",
+      "push-up",
+      "clapping push up",
+      "push up",
+      "push",
+      "clapping pushup",
+      "pushup",
+      "clapping pushups",
+      "pushups",
+      "clapping push-ups",
+      "push-ups",
+      "clapping push ups",
+      "push ups",
+      "clapping-push-up",
+      "віджимання з хлопком",
+      "віджимання",
+      "хлопком"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "sledge-hammer-strike",
+    "name": "Sledge Hammer Strike",
+    "search_terms": [
+      "sledge hammer strike",
+      "sledge",
+      "hammer strike",
+      "hammer",
+      "strike",
+      "sledge-hammer-strike",
+      "удари молотом по покришці",
+      "удари",
+      "молотом по покришці",
+      "молотом",
+      "покришці",
+      "sledgehammer strike",
+      "sledgehammer"
+    ],
+    "modality": "M",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "shoulders",
+      "lats",
+      "core",
+      "forearms",
+      "glutes"
+    ],
+    "equipment": [
+      "hammer"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "single-arm-dumbbell-overhead-squat",
+    "name": "Single-arm Dumbbell Overhead Squat",
+    "search_terms": [
+      "single-arm dumbbell overhead squat",
+      "single-arm",
+      "dumbbell overhead squat",
+      "dumbbell",
+      "overhead squat",
+      "overhead",
+      "squat",
+      "single arm dumbbell overhead squat",
+      "single",
+      "arm dumbbell overhead squat",
+      "arm",
+      "single arm db overhead squat",
+      "arm db overhead squat",
+      "db overhead squat",
+      "db",
+      "single-arm-dumbbell-overhead-squat",
+      "присідання з гантелею над головою у вільній руці",
+      "присідання",
+      "гантелею над головою у вільній руці",
+      "гантелею",
+      "над головою у вільній руці",
+      "над",
+      "головою у вільній руці",
+      "головою",
+      "вільній руці",
+      "вільній",
+      "руці"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "jumping-lunge",
+    "name": "Jumping Lunge",
+    "search_terms": [
+      "jumping lunge",
+      "jumping",
+      "lunge",
+      "jumping-lunge",
+      "випади зі стрибком",
+      "випади",
+      "стрибком"
+    ],
+    "modality": "G",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-lunge",
+    "name": "Dumbbell Lunge",
+    "search_terms": [
+      "dumbbell lunge",
+      "dumbbell",
+      "lunge",
+      "db lunge",
+      "db",
+      "dumbbell-lunge",
+      "випади з гантелями",
+      "випади",
+      "гантелями"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "weighted-run",
+    "name": "Weighted run",
+    "search_terms": [
+      "weighted run",
+      "weighted",
+      "run",
+      "weighted-run",
+      "біг з обтяженням",
+      "біг",
+      "обтяженням"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [
+      "vest"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "squat-snatch",
+    "name": "Squat Snatch",
+    "search_terms": [
+      "squat snatch",
+      "squat",
+      "snatch",
+      "squat-snatch",
+      "ривок в сід",
+      "ривок",
+      "сід"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "two-arm-kettlebell-row",
+    "name": "Two Arm KettleBell Row",
+    "search_terms": [
+      "two arm kettlebell row",
+      "two",
+      "arm kettlebell row",
+      "arm",
+      "kettlebell row",
+      "kettlebell",
+      "row",
+      "two arm kb row",
+      "arm kb row",
+      "kb row",
+      "kb",
+      "two-arm-kettlebell-row",
+      "тяга гирі в нахилі двома руками",
+      "тяга",
+      "гирі в нахилі двома руками",
+      "гирі",
+      "нахилі двома руками",
+      "нахилі",
+      "двома руками",
+      "двома",
+      "руками"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "power-clean-and-jerk",
+    "name": "Power Clean and Jerk",
+    "search_terms": [
+      "power clean and jerk",
+      "power",
+      "clean and jerk",
+      "clean",
+      "jerk",
+      "power-clean-and-jerk",
+      "силовий поштовх штанги",
+      "силовий",
+      "поштовх штанги",
+      "поштовх",
+      "штанги"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-sumo-deadlift",
+    "name": "Kettlebell Sumo Deadlift",
+    "search_terms": [
+      "kettlebell sumo deadlift",
+      "kettlebell",
+      "sumo deadlift",
+      "sumo",
+      "deadlift",
+      "kb sumo deadlift",
+      "kb",
+      "kettlebell-sumo-deadlift",
+      "стнова тяга гирі в стійці сумо",
+      "стнова",
+      "тяга гирі в стійці сумо",
+      "тяга",
+      "гирі в стійці сумо",
+      "гирі",
+      "стійці сумо",
+      "стійці",
+      "сумо"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "parallette-handstand-push-up",
+    "name": "Parallette Handstand push-up",
+    "search_terms": [
+      "parallette handstand push-up",
+      "parallette",
+      "handstand push-up",
+      "handstand",
+      "push-up",
+      "parallette handstand push up",
+      "handstand push up",
+      "push up",
+      "push",
+      "parallette handstand pushup",
+      "handstand pushup",
+      "pushup",
+      "parallette handstand pushups",
+      "handstand pushups",
+      "pushups",
+      "parallette handstand push-ups",
+      "handstand push-ups",
+      "push-ups",
+      "parallette handstand push ups",
+      "handstand push ups",
+      "push ups",
+      "hspu",
+      "parallette-handstand-push-up",
+      "віджимання в стійці на руках на упорах",
+      "віджимання",
+      "стійці на руках на упорах",
+      "стійці",
+      "руках на упорах",
+      "руках",
+      "упорах"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "parallettes"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-burpee-deadlifts",
+    "name": "Dumbbell Burpee Deadlifts",
+    "search_terms": [
+      "dumbbell burpee deadlifts",
+      "dumbbell",
+      "burpee deadlifts",
+      "burpee",
+      "deadlifts",
+      "dumbbell burpee deadlift",
+      "burpee deadlift",
+      "deadlift",
+      "db burpee deadlift",
+      "db",
+      "dumbbell-burpee-deadlifts",
+      "бурпі з гантелями",
+      "бурпі",
+      "гантелями"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core",
+      "quads",
+      "glutes",
+      "hamstrings",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "lateral-burpees",
+    "name": "Lateral Burpees",
+    "search_terms": [
+      "lateral burpees",
+      "lateral",
+      "burpees",
+      "lateral-burpees",
+      "бурпі зі стрибком в сторону",
+      "бурпі",
+      "стрибком в сторону",
+      "стрибком",
+      "сторону"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core",
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "floor-press",
+    "name": "Floor Press",
+    "search_terms": [
+      "floor press",
+      "floor",
+      "press",
+      "floor-press",
+      "жим з підлоги",
+      "жим",
+      "підлоги"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "medicine-ball-clean",
+    "name": "Medicine-Ball Clean",
+    "search_terms": [
+      "medicine-ball clean",
+      "medicine-ball",
+      "clean",
+      "medicine ball clean",
+      "medicine",
+      "ball clean",
+      "ball",
+      "medicine-ball-clean",
+      "взяття медболу на груди",
+      "взяття",
+      "медболу на груди",
+      "медболу",
+      "груди"
+    ],
+    "modality": "G",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "medicine ball"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "muscle-snatch",
+    "name": "Muscle Snatch",
+    "search_terms": [
+      "muscle snatch",
+      "muscle",
+      "snatch",
+      "muscle-snatch",
+      "протяжка ривковим хватом",
+      "протяжка",
+      "ривковим хватом",
+      "ривковим",
+      "хватом"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "lateral-hops",
+    "name": "Lateral hops",
+    "search_terms": [
+      "lateral hops",
+      "lateral",
+      "hops",
+      "lateral-hops",
+      "бокові стрибки",
+      "бокові",
+      "стрибки"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "calves",
+      "quads",
+      "glutes",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "skierg",
+    "name": "SkiErg",
+    "search_terms": [
+      "skierg",
+      "лижний тренажер",
+      "лижний",
+      "тренажер",
+      "ski erg",
+      "ski",
+      "erg",
+      "ski ergometer",
+      "ergometer",
+      "ski machine",
+      "machine"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "triceps",
+      "shoulders",
+      "core",
+      "glutes",
+      "hamstrings",
+      "quads"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "alternating-kettlebell-shoulder-press",
+    "name": "Alternating Kettlebell Shoulder Press",
+    "search_terms": [
+      "alternating kettlebell shoulder press",
+      "alternating",
+      "kettlebell shoulder press",
+      "kettlebell",
+      "shoulder press",
+      "shoulder",
+      "press",
+      "alternating kb shoulder press",
+      "kb shoulder press",
+      "kb",
+      "alternating-kettlebell-shoulder-press",
+      "змінний жим гирь стоячи",
+      "змінний",
+      "жим гирь стоячи",
+      "жим",
+      "гирь стоячи",
+      "гирь",
+      "стоячи"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "tuck-jump",
+    "name": "Tuck jump",
+    "search_terms": [
+      "tuck jump",
+      "tuck",
+      "jump",
+      "tuck-jump",
+      "стрибки з високим підійманням стегна",
+      "стрибки",
+      "високим підійманням стегна",
+      "високим",
+      "підійманням стегна",
+      "підійманням",
+      "стегна"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-clean",
+    "name": "Dumbbell Clean",
+    "search_terms": [
+      "dumbbell clean",
+      "dumbbell",
+      "clean",
+      "db clean",
+      "db",
+      "dumbbell-clean",
+      "взяття на груди гантелей",
+      "взяття",
+      "груди гантелей",
+      "груди",
+      "гантелей"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "box-step-ups",
+    "name": "Box Step Ups",
+    "search_terms": [
+      "box step ups",
+      "box",
+      "step ups",
+      "step",
+      "box step up",
+      "step up",
+      "box-step-ups",
+      "підйом на тумбу",
+      "підйом",
+      "тумбу"
+    ],
+    "modality": "G",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "box jumps"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "weighted-bar-dips",
+    "name": "Weighted Bar Dips",
+    "search_terms": [
+      "weighted bar dips",
+      "weighted",
+      "bar dips",
+      "bar",
+      "dips",
+      "weighted bar dip",
+      "bar dip",
+      "dip",
+      "weighted-bar-dips"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "dips"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hang-squat-clean",
+    "name": "Hang Squat Clean",
+    "search_terms": [
+      "hang squat clean",
+      "hang",
+      "squat clean",
+      "squat",
+      "clean",
+      "hang-squat-clean",
+      "взяття на груди штанги з вису в сід",
+      "взяття",
+      "груди штанги з вису в сід",
+      "груди",
+      "штанги з вису в сід",
+      "штанги",
+      "вису в сід",
+      "вису",
+      "сід"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-l-sit",
+    "name": "Ring L-Sit",
+    "search_terms": [
+      "ring l-sit",
+      "ring",
+      "l-sit",
+      "ring l sit",
+      "l sit",
+      "sit",
+      "ring-l-sit",
+      "утримання ніг паралельно підлозі на кільцях",
+      "утримання",
+      "ніг паралельно підлозі на кільцях",
+      "ніг",
+      "паралельно підлозі на кільцях",
+      "паралельно",
+      "підлозі на кільцях",
+      "підлозі",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors",
+      "shoulders",
+      "triceps"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "double-kettlebell-swing",
+    "name": "Double Kettlebell Swing",
+    "search_terms": [
+      "double kettlebell swing",
+      "double",
+      "kettlebell swing",
+      "kettlebell",
+      "swing",
+      "double kb swing",
+      "kb swing",
+      "kb",
+      "double-kettlebell-swing",
+      "махи двох гирь",
+      "махи",
+      "двох гирь",
+      "двох",
+      "гирь"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "lower_back",
+      "core",
+      "shoulders",
+      "forearms"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "cluster",
+    "name": "Cluster",
+    "search_terms": [
+      "cluster",
+      "кластер"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "inverted-burpee",
+    "name": "Inverted Burpee",
+    "search_terms": [
+      "inverted burpee",
+      "inverted",
+      "burpee",
+      "inverted-burpee",
+      "зворотні бурпі",
+      "зворотні",
+      "бурпі"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "core",
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "jumping-pull-up",
+    "name": "Jumping Pull-up",
+    "search_terms": [
+      "jumping pull-up",
+      "jumping",
+      "pull-up",
+      "jumping pull up",
+      "pull up",
+      "pull",
+      "jumping pullup",
+      "pullup",
+      "jumping pullups",
+      "pullups",
+      "jumping pull-ups",
+      "pull-ups",
+      "jumping pull ups",
+      "pull ups",
+      "jumping-pull-up",
+      "стрибкові підтягування",
+      "стрибкові",
+      "підтягування"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core",
+      "quads",
+      "calves"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hang-snatch",
+    "name": "Hang Snatch",
+    "search_terms": [
+      "hang snatch",
+      "hang",
+      "snatch",
+      "hang-snatch",
+      "ривок штанги з вису",
+      "ривок",
+      "штанги з вису",
+      "штанги",
+      "вису"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-push-jerk",
+    "name": "Dumbbell Push Jerk",
+    "search_terms": [
+      "dumbbell push jerk",
+      "dumbbell",
+      "push jerk",
+      "push",
+      "jerk",
+      "db push jerk",
+      "db",
+      "dumbbell-push-jerk",
+      "швунг поштовховий гантелей",
+      "швунг",
+      "поштовховий гантелей",
+      "поштовховий",
+      "гантелей"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "renegade-row",
+    "name": "Renegade Row",
+    "search_terms": [
+      "renegade row",
+      "renegade",
+      "row",
+      "renegade-row",
+      "тяга гантелі в упорі лежачи",
+      "тяга",
+      "гантелі в упорі лежачи",
+      "гантелі",
+      "упорі лежачи",
+      "упорі",
+      "лежачи"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "one-arm-kettlebell-press",
+    "name": "One arm Kettlebell Press",
+    "search_terms": [
+      "one arm kettlebell press",
+      "one",
+      "arm kettlebell press",
+      "arm",
+      "kettlebell press",
+      "kettlebell",
+      "press",
+      "one arm kb press",
+      "arm kb press",
+      "kb press",
+      "kb",
+      "one-arm-kettlebell-press",
+      "жим гирі стоячи однією рукою",
+      "жим",
+      "гирі стоячи однією рукою",
+      "гирі",
+      "стоячи однією рукою",
+      "стоячи",
+      "однією рукою",
+      "однією",
+      "рукою"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "sumo-deadlift",
+    "name": "Sumo Deadlift",
+    "search_terms": [
+      "sumo deadlift",
+      "sumo",
+      "deadlift",
+      "sumo-deadlift",
+      "станова тяга у стилі сумо",
+      "станова",
+      "тяга у стилі сумо",
+      "тяга",
+      "стилі сумо",
+      "стилі",
+      "сумо"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-pull-ups",
+    "name": "Ring Pull Ups",
+    "search_terms": [
+      "ring pull ups",
+      "ring",
+      "pull ups",
+      "pull",
+      "ring pull up",
+      "pull up",
+      "ring pullup",
+      "pullup",
+      "ring pull-up",
+      "pull-up",
+      "ring pullups",
+      "pullups",
+      "ring pull-ups",
+      "pull-ups",
+      "ring-pull-ups",
+      "підтягування на гімнастичних кільцях",
+      "підтягування",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "yoke-carry",
+    "name": "Yoke Carry",
+    "search_terms": [
+      "yoke carry",
+      "yoke",
+      "carry",
+      "yoke-carry",
+      "прохідка з коромислом",
+      "прохідка",
+      "коромислом"
+    ],
+    "modality": "W",
+    "movement_pattern": "carry",
+    "muscle_groups": [
+      "core",
+      "upper_back",
+      "traps",
+      "glutes",
+      "quads",
+      "hamstrings",
+      "calves"
+    ],
+    "equipment": [
+      "yoke"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-box-step-ups",
+    "name": "Dumbbell box step-ups",
+    "search_terms": [
+      "dumbbell box step-ups",
+      "dumbbell",
+      "box step-ups",
+      "box",
+      "step-ups",
+      "dumbbell box step ups",
+      "box step ups",
+      "step ups",
+      "step",
+      "dumbbell box step up",
+      "box step up",
+      "step up",
+      "db box step up",
+      "db",
+      "dumbbell-box-step-ups",
+      "зашагування на тумбу с вагою",
+      "зашагування",
+      "тумбу с вагою",
+      "тумбу",
+      "вагою"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "box jumps",
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-hang-squat-clean",
+    "name": "Dumbbell Hang Squat Clean",
+    "search_terms": [
+      "dumbbell hang squat clean",
+      "dumbbell",
+      "hang squat clean",
+      "hang",
+      "squat clean",
+      "squat",
+      "clean",
+      "db hang squat clean",
+      "db",
+      "dumbbell-hang-squat-clean",
+      "взяття гантелі з вису на груди в положення присідання",
+      "взяття",
+      "гантелі з вису на груди в положення присідання",
+      "гантелі",
+      "вису на груди в положення присідання",
+      "вису",
+      "груди в положення присідання",
+      "груди",
+      "положення присідання",
+      "положення",
+      "присідання"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-high-pull",
+    "name": "Kettlebell High Pull",
+    "search_terms": [
+      "kettlebell high pull",
+      "kettlebell",
+      "high pull",
+      "high",
+      "pull",
+      "kb high pull",
+      "kb",
+      "kettlebell-high-pull",
+      "тяга гирі до підборіддя",
+      "тяга",
+      "гирі до підборіддя",
+      "гирі",
+      "підборіддя"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "shoulders",
+      "traps",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "strict-ring-dip",
+    "name": "Strict Ring Dip",
+    "search_terms": [
+      "strict ring dip",
+      "strict",
+      "ring dip",
+      "ring",
+      "dip",
+      "strict-ring-dip",
+      "строгі віджимання на гімнастичних кільцях",
+      "строгі",
+      "віджимання на гімнастичних кільцях",
+      "віджимання",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kipping-bar-muscle-up",
+    "name": "Kipping Bar Muscle-Up",
+    "search_terms": [
+      "kipping bar muscle-up",
+      "kipping",
+      "bar muscle-up",
+      "bar",
+      "muscle-up",
+      "kipping bar muscle up",
+      "bar muscle up",
+      "muscle up",
+      "muscle",
+      "kipping bar muscleup",
+      "bar muscleup",
+      "muscleup",
+      "kipping bar muscleups",
+      "bar muscleups",
+      "muscleups",
+      "kipping bar muscle-ups",
+      "bar muscle-ups",
+      "muscle-ups",
+      "kipping bar muscle ups",
+      "bar muscle ups",
+      "muscle ups",
+      "kipping-bar-muscle-up",
+      "кіпінг виходи на перекладині",
+      "кіпінг",
+      "виходи на перекладині",
+      "виходи",
+      "перекладині"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "chest",
+      "triceps",
+      "shoulders",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "burpee-bar-muscle-up",
+    "name": "Burpee Bar Muscle-up",
+    "search_terms": [
+      "burpee bar muscle-up",
+      "burpee",
+      "bar muscle-up",
+      "bar",
+      "muscle-up",
+      "burpee bar muscle up",
+      "bar muscle up",
+      "muscle up",
+      "muscle",
+      "burpee bar muscleup",
+      "bar muscleup",
+      "muscleup",
+      "burpee bar muscleups",
+      "bar muscleups",
+      "muscleups",
+      "burpee bar muscle-ups",
+      "bar muscle-ups",
+      "muscle-ups",
+      "burpee bar muscle ups",
+      "bar muscle ups",
+      "muscle ups",
+      "burpee-bar-muscle-up",
+      "бурпі з виходом на перекладині",
+      "бурпі",
+      "виходом на перекладині",
+      "виходом",
+      "перекладині"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "lats",
+      "biceps",
+      "forearms",
+      "core",
+      "quads",
+      "glutes"
+    ],
+    "equipment": [
+      "pull-up bar"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "push-jerk-behind-head",
+    "name": "Push Jerk Behind the Head",
+    "search_terms": [
+      "push jerk behind the head",
+      "push",
+      "jerk behind the head",
+      "jerk",
+      "behind the head",
+      "behind",
+      "head",
+      "push-jerk-behind-head",
+      "push jerk behind head",
+      "jerk behind head",
+      "behind head",
+      "поштовховий швунг з плечей",
+      "поштовховий",
+      "швунг з плечей",
+      "швунг",
+      "плечей"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-power-clean",
+    "name": "Dumbbell Power Clean",
+    "search_terms": [
+      "dumbbell power clean",
+      "dumbbell",
+      "power clean",
+      "power",
+      "clean",
+      "db power clean",
+      "db",
+      "dumbbell-power-clean",
+      "силове взяття на груди гантелей",
+      "силове",
+      "взяття на груди гантелей",
+      "взяття",
+      "груди гантелей",
+      "груди",
+      "гантелей"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "single-arm-dumbbell-overhead-lunge",
+    "name": "Single-arm Dumbbell Overhead Lunge",
+    "search_terms": [
+      "single-arm dumbbell overhead lunge",
+      "single-arm",
+      "dumbbell overhead lunge",
+      "dumbbell",
+      "overhead lunge",
+      "overhead",
+      "lunge",
+      "single arm dumbbell overhead lunge",
+      "single",
+      "arm dumbbell overhead lunge",
+      "arm",
+      "single arm db overhead lunge",
+      "arm db overhead lunge",
+      "db overhead lunge",
+      "db",
+      "single-arm-dumbbell-overhead-lunge",
+      "випади з гантелею над головою у вільній руці",
+      "випади",
+      "гантелею над головою у вільній руці",
+      "гантелею",
+      "над головою у вільній руці",
+      "над",
+      "головою у вільній руці",
+      "головою",
+      "вільній руці",
+      "вільній",
+      "руці"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "floor-wipers",
+    "name": "Floor Wipers",
+    "search_terms": [
+      "floor wipers",
+      "floor",
+      "wipers",
+      "floor-wipers",
+      "полотер"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors",
+      "shoulders",
+      "chest",
+      "triceps"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-squat-snatch",
+    "name": "Dumbbell Squat Snatch",
+    "search_terms": [
+      "dumbbell squat snatch",
+      "dumbbell",
+      "squat snatch",
+      "squat",
+      "snatch",
+      "db squat snatch",
+      "db",
+      "dumbbell-squat-snatch",
+      "ривок гантелі в сід",
+      "ривок",
+      "гантелі в сід",
+      "гантелі",
+      "сід"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "star-jump",
+    "name": "Star jump",
+    "search_terms": [
+      "star jump",
+      "star",
+      "jump",
+      "star-jump",
+      "вистрибування зірочкою",
+      "вистрибування",
+      "зірочкою"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "calves",
+      "quads",
+      "glutes",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "lateral-jump-over-barbell",
+    "name": "Lateral jump over barbell",
+    "search_terms": [
+      "lateral jump over barbell",
+      "lateral",
+      "jump over barbell",
+      "jump",
+      "over barbell",
+      "over",
+      "barbell",
+      "lateral-jump-over-barbell",
+      "стрибки через штангу",
+      "стрибки",
+      "через штангу",
+      "через",
+      "штангу"
+    ],
+    "modality": "G",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "calves",
+      "quads",
+      "glutes",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "stiff-legged-deadlift",
+    "name": "Stiff-Legged Deadlift",
+    "search_terms": [
+      "stiff-legged deadlift",
+      "stiff-legged",
+      "deadlift",
+      "stiff legged deadlift",
+      "stiff",
+      "legged deadlift",
+      "legged",
+      "stiff-legged-deadlift",
+      "станова тяга на прямих ногах",
+      "станова",
+      "тяга на прямих ногах",
+      "тяга",
+      "прямих ногах",
+      "прямих",
+      "ногах"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "burpee-muscle-up",
+    "name": "Burpee Muscle-Up",
+    "search_terms": [
+      "burpee muscle-up",
+      "burpee",
+      "muscle-up",
+      "burpee muscle up",
+      "muscle up",
+      "muscle",
+      "burpee muscleup",
+      "muscleup",
+      "burpee muscleups",
+      "muscleups",
+      "burpee muscle-ups",
+      "muscle-ups",
+      "burpee muscle ups",
+      "muscle ups",
+      "burpee-muscle-up",
+      "бурпі з виходом на гімнастичних кільцях",
+      "бурпі",
+      "виходом на гімнастичних кільцях",
+      "виходом",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "triceps",
+      "lats",
+      "biceps",
+      "forearms",
+      "core",
+      "quads",
+      "glutes"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-hand-stand-push-up",
+    "name": "Ring Hand Stand Push Up",
+    "search_terms": [
+      "ring hand stand push up",
+      "ring",
+      "hand stand push up",
+      "hand",
+      "stand push up",
+      "stand",
+      "push up",
+      "push",
+      "ring hand stand pushup",
+      "hand stand pushup",
+      "stand pushup",
+      "pushup",
+      "ring hand stand push-up",
+      "hand stand push-up",
+      "stand push-up",
+      "push-up",
+      "ring hand stand pushups",
+      "hand stand pushups",
+      "stand pushups",
+      "pushups",
+      "ring hand stand push-ups",
+      "hand stand push-ups",
+      "stand push-ups",
+      "push-ups",
+      "ring hand stand push ups",
+      "hand stand push ups",
+      "stand push ups",
+      "push ups",
+      "ring-hand-stand-push-up",
+      "віджимання в стійці на руках на гімнастичних кільцях",
+      "віджимання",
+      "стійці на руках на гімнастичних кільцях",
+      "стійці",
+      "руках на гімнастичних кільцях",
+      "руках",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях",
+      "ring handstand push-up",
+      "handstand push-up",
+      "handstand",
+      "ring handstand push up",
+      "handstand push up",
+      "ring handstand pushup",
+      "handstand pushup",
+      "ring handstand pushups",
+      "handstand pushups",
+      "ring handstand push-ups",
+      "handstand push-ups",
+      "ring handstand push ups",
+      "handstand push ups",
+      "hspu"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-squat-clean",
+    "name": "Dumbbell Squat Clean",
+    "search_terms": [
+      "dumbbell squat clean",
+      "dumbbell",
+      "squat clean",
+      "squat",
+      "clean",
+      "db squat clean",
+      "db",
+      "dumbbell-squat-clean",
+      "взяття гантелей на груди в сід",
+      "взяття",
+      "гантелей на груди в сід",
+      "гантелей",
+      "груди в сід",
+      "груди",
+      "сід"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hollow-rock",
+    "name": "Hollow Rock",
+    "search_terms": [
+      "hollow rock",
+      "hollow",
+      "rock",
+      "hollow-rock",
+      "холлоу рокс (човник)",
+      "холлоу",
+      "рокс (човник)",
+      "рокс",
+      "(човник)",
+      "холлоу рокс човник",
+      "рокс човник",
+      "човник"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "toes-rings",
+    "name": "Toes-to-rings",
+    "search_terms": [
+      "toes-to-rings",
+      "toes to rings",
+      "toes",
+      "rings",
+      "toes to ring",
+      "ring",
+      "toes-rings",
+      "toes rings",
+      "toes ring",
+      "носки до гімнастичних кілець",
+      "носки",
+      "гімнастичних кілець",
+      "гімнастичних",
+      "кілець"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "muscle-clean",
+    "name": "Muscle Clean",
+    "search_terms": [
+      "muscle clean",
+      "muscle",
+      "clean",
+      "muscle-clean",
+      "взяття штанги на груди (протяжка)",
+      "взяття",
+      "штанги на груди (протяжка)",
+      "штанги",
+      "груди (протяжка)",
+      "груди",
+      "(протяжка)",
+      "взяття штанги на груди протяжка",
+      "штанги на груди протяжка",
+      "груди протяжка",
+      "протяжка"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "ring-chest-fly",
+    "name": "Ring Chest Fly",
+    "search_terms": [
+      "ring chest fly",
+      "ring",
+      "chest fly",
+      "chest",
+      "fly",
+      "ring-chest-fly",
+      "глубокі віджимання на гімнастичних кільцях",
+      "глубокі",
+      "віджимання на гімнастичних кільцях",
+      "віджимання",
+      "гімнастичних кільцях",
+      "гімнастичних",
+      "кільцях"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "overhead-walk",
+    "name": "Overhead Walk",
+    "search_terms": [
+      "overhead walk",
+      "overhead",
+      "walk",
+      "overhead-walk",
+      "ходьба зі штангою над головою",
+      "ходьба",
+      "штангою над головою",
+      "штангою",
+      "над головою",
+      "над",
+      "головою",
+      "overhead carry",
+      "carry"
+    ],
+    "modality": "W",
+    "movement_pattern": "carry",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "traps",
+      "core",
+      "glutes",
+      "quads",
+      "calves"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "double-whip-smashbattling-ropes",
+    "name": "Double Whip Smash Battling Ropes",
+    "search_terms": [
+      "double whip smash battling ropes",
+      "double",
+      "whip smash battling ropes",
+      "whip",
+      "smash battling ropes",
+      "smash",
+      "battling ropes",
+      "battling",
+      "ropes",
+      "double-whip-smashbattling-ropes",
+      "double whip smashbattling ropes",
+      "whip smashbattling ropes",
+      "smashbattling ropes",
+      "smashbattling",
+      "подвійні удари канатом",
+      "подвійні",
+      "удари канатом",
+      "удари",
+      "канатом",
+      "battle rope slams",
+      "battle",
+      "rope slams",
+      "rope",
+      "slams",
+      "battle ropes"
+    ],
+    "modality": "M",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "forearms",
+      "core",
+      "quads"
+    ],
+    "equipment": [
+      "battle rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "one-arm-kettlebell-thruster",
+    "name": "One Arm Kettlebell Thruster",
+    "search_terms": [
+      "one arm kettlebell thruster",
+      "one",
+      "arm kettlebell thruster",
+      "arm",
+      "kettlebell thruster",
+      "kettlebell",
+      "thruster",
+      "one arm kb thruster",
+      "arm kb thruster",
+      "kb thruster",
+      "kb",
+      "one-arm-kettlebell-thruster",
+      "викиди гирі однією рукою",
+      "викиди",
+      "гирі однією рукою",
+      "гирі",
+      "однією рукою",
+      "однією",
+      "рукою"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kettlebell-halo",
+    "name": "Kettlebell Halo",
+    "search_terms": [
+      "kettlebell halo",
+      "kettlebell",
+      "halo",
+      "kb halo",
+      "kb",
+      "kettlebell-halo",
+      "обертання гирі",
+      "обертання",
+      "гирі"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "shoulders",
+      "upper_back",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "split-squat",
+    "name": "Split Squat",
+    "search_terms": [
+      "split squat",
+      "split",
+      "squat",
+      "split-squat",
+      "присідання у випаді",
+      "присідання",
+      "випаді"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "kipping-hanstand-push-up",
+    "name": "Kipping Hanstand Push-Up",
+    "search_terms": [
+      "kipping hanstand push-up",
+      "kipping",
+      "hanstand push-up",
+      "hanstand",
+      "push-up",
+      "kipping hanstand push up",
+      "hanstand push up",
+      "push up",
+      "push",
+      "kipping hanstand pushup",
+      "hanstand pushup",
+      "pushup",
+      "kipping hanstand pushups",
+      "hanstand pushups",
+      "pushups",
+      "kipping hanstand push-ups",
+      "hanstand push-ups",
+      "push-ups",
+      "kipping hanstand push ups",
+      "hanstand push ups",
+      "push ups",
+      "kipping-hanstand-push-up",
+      "кіпінг віджимання в стійці на руках",
+      "кіпінг",
+      "віджимання в стійці на руках",
+      "віджимання",
+      "стійці на руках",
+      "стійці",
+      "руках",
+      "kipping handstand push-up",
+      "handstand push-up",
+      "handstand",
+      "kipping handstand push up",
+      "handstand push up",
+      "kipping handstand pushup",
+      "handstand pushup",
+      "kipping handstand pushups",
+      "handstand pushups",
+      "kipping handstand push-ups",
+      "handstand push-ups",
+      "kipping handstand push ups",
+      "handstand push ups",
+      "hspu"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "clean-overhead-press",
+    "name": "Clean To Overhead Press",
+    "search_terms": [
+      "clean to overhead press",
+      "clean",
+      "overhead press",
+      "overhead",
+      "press",
+      "clean-overhead-press",
+      "clean overhead press",
+      "взяття штанги на груди та жим стоячи",
+      "взяття",
+      "штанги на груди та жим стоячи",
+      "штанги",
+      "груди та жим стоячи",
+      "груди",
+      "жим стоячи",
+      "жим",
+      "стоячи"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "alternating-floor-press",
+    "name": "Alternating floor press",
+    "search_terms": [
+      "alternating floor press",
+      "alternating",
+      "floor press",
+      "floor",
+      "press",
+      "alternating-floor-press",
+      "змінний жим з полу",
+      "змінний",
+      "жим з полу",
+      "жим",
+      "полу"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "chest",
+      "triceps",
+      "shoulders"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "right-arm-overhead-walking-lunges",
+    "name": "Right-arm Overhead Walking Lunges",
+    "search_terms": [
+      "right-arm overhead walking lunges",
+      "right-arm",
+      "overhead walking lunges",
+      "overhead",
+      "walking lunges",
+      "walking",
+      "lunges",
+      "right arm overhead walking lunges",
+      "right",
+      "arm overhead walking lunges",
+      "arm",
+      "right arm overhead walking lunge",
+      "arm overhead walking lunge",
+      "overhead walking lunge",
+      "walking lunge",
+      "lunge",
+      "right-arm-overhead-walking-lunges",
+      "випади з гирею над головою у правій руці",
+      "випади",
+      "гирею над головою у правій руці",
+      "гирею",
+      "над головою у правій руці",
+      "над",
+      "головою у правій руці",
+      "головою",
+      "правій руці",
+      "правій",
+      "руці"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "atlas-stone-carry",
+    "name": "Atlas Stone Carry",
+    "search_terms": [
+      "atlas stone carry",
+      "atlas",
+      "stone carry",
+      "stone",
+      "carry",
+      "atlas-stone-carry",
+      "перенесення каменя атлас",
+      "перенесення",
+      "каменя атлас",
+      "каменя",
+      "атлас"
+    ],
+    "modality": "W",
+    "movement_pattern": "carry",
+    "muscle_groups": [
+      "core",
+      "upper_back",
+      "traps",
+      "glutes",
+      "quads",
+      "hamstrings",
+      "calves"
+    ],
+    "equipment": [
+      "stone"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hang-squat-snatch",
+    "name": "Hang Squat Snatch",
+    "search_terms": [
+      "hang squat snatch",
+      "hang",
+      "squat snatch",
+      "squat",
+      "snatch",
+      "hang-squat-snatch",
+      "ривок штанги з вису в сід",
+      "ривок",
+      "штанги з вису в сід",
+      "штанги",
+      "вису в сід",
+      "вису",
+      "сід"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "forward-roll",
+    "name": "Forward Roll",
+    "search_terms": [
+      "forward roll",
+      "forward",
+      "roll",
+      "forward-roll",
+      "перекид вперед",
+      "перекид",
+      "вперед"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "core",
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "snatch-balance",
+    "name": "Snatch Balance",
+    "search_terms": [
+      "snatch balance",
+      "snatch",
+      "balance",
+      "snatch-balance",
+      "ривковий баланс",
+      "ривковий",
+      "баланс"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "xpo-trainer-sled-push",
+    "name": "XPO Trainer Sled Push",
+    "search_terms": [
+      "xpo trainer sled push",
+      "xpo",
+      "trainer sled push",
+      "trainer",
+      "sled push",
+      "sled",
+      "push",
+      "xpo-trainer-sled-push",
+      "штовхання xpo саней",
+      "штовхання",
+      "xpo саней",
+      "саней"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "sled-drag",
+    "name": "Sled Drag",
+    "search_terms": [
+      "sled drag",
+      "sled",
+      "drag",
+      "sled-drag",
+      "тяга саней",
+      "тяга",
+      "саней"
+    ],
+    "modality": "W",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "kipping-chest-bar-pull-up",
+    "name": "Kipping Chest-To-Bar Pull-Up",
+    "search_terms": [
+      "kipping chest-to-bar pull-up",
+      "kipping",
+      "chest-to-bar pull-up",
+      "chest-to-bar",
+      "pull-up",
+      "kipping chest to bar pull up",
+      "chest to bar pull up",
+      "chest",
+      "bar pull up",
+      "bar",
+      "pull up",
+      "pull",
+      "kipping chest to bar pullup",
+      "chest to bar pullup",
+      "bar pullup",
+      "pullup",
+      "kipping chest to bar pull-up",
+      "chest to bar pull-up",
+      "bar pull-up",
+      "kipping chest to bar pullups",
+      "chest to bar pullups",
+      "bar pullups",
+      "pullups",
+      "kipping chest to bar pull-ups",
+      "chest to bar pull-ups",
+      "bar pull-ups",
+      "pull-ups",
+      "kipping chest to bar pull ups",
+      "chest to bar pull ups",
+      "bar pull ups",
+      "pull ups",
+      "kipping-chest-bar-pull-up",
+      "kipping chest bar pull up",
+      "chest bar pull up",
+      "kipping chest bar pullup",
+      "chest bar pullup",
+      "kipping chest bar pull-up",
+      "chest bar pull-up",
+      "kipping chest bar pullups",
+      "chest bar pullups",
+      "kipping chest bar pull-ups",
+      "chest bar pull-ups",
+      "kipping chest bar pull ups",
+      "chest bar pull ups",
+      "підтягування кіпінгом до рівня грудей",
+      "підтягування",
+      "кіпінгом до рівня грудей",
+      "кіпінгом",
+      "рівня грудей",
+      "рівня",
+      "грудей"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "right-arm-dumbbell-snatch",
+    "name": "Right Arm Dumbbell Snatch",
+    "search_terms": [
+      "right arm dumbbell snatch",
+      "right",
+      "arm dumbbell snatch",
+      "arm",
+      "dumbbell snatch",
+      "dumbbell",
+      "snatch",
+      "right arm db snatch",
+      "arm db snatch",
+      "db snatch",
+      "db",
+      "right-arm-dumbbell-snatch",
+      "ривок гантелі правою рукою",
+      "ривок",
+      "гантелі правою рукою",
+      "гантелі",
+      "правою рукою",
+      "правою",
+      "рукою"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "left-arm-overhead-walking-lunges",
+    "name": "Left-arm Overhead Walking Lunges",
+    "search_terms": [
+      "left-arm overhead walking lunges",
+      "left-arm",
+      "overhead walking lunges",
+      "overhead",
+      "walking lunges",
+      "walking",
+      "lunges",
+      "left arm overhead walking lunges",
+      "left",
+      "arm overhead walking lunges",
+      "arm",
+      "left arm overhead walking lunge",
+      "arm overhead walking lunge",
+      "overhead walking lunge",
+      "walking lunge",
+      "lunge",
+      "left-arm-overhead-walking-lunges",
+      "випади з гирею над головою у лівій руці",
+      "випади",
+      "гирею над головою у лівій руці",
+      "гирею",
+      "над головою у лівій руці",
+      "над",
+      "головою у лівій руці",
+      "головою",
+      "лівій руці",
+      "лівій",
+      "руці"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "kettlebell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "battling-rope",
+    "name": "Battling Rope",
+    "search_terms": [
+      "battling rope",
+      "battling",
+      "rope",
+      "battling-rope",
+      "боротьба з канатом",
+      "боротьба",
+      "канатом",
+      "battle ropes",
+      "battle",
+      "ropes",
+      "battle rope waves",
+      "rope waves",
+      "waves"
+    ],
+    "modality": "M",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "forearms",
+      "core",
+      "quads"
+    ],
+    "equipment": [
+      "battle rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dip-bar-l-sit",
+    "name": "Dip Bar L-Sit",
+    "search_terms": [
+      "dip bar l-sit",
+      "dip",
+      "bar l-sit",
+      "bar",
+      "l-sit",
+      "dip bar l sit",
+      "bar l sit",
+      "l sit",
+      "sit",
+      "dip-bar-l-sit",
+      "утримання l положення на брусах",
+      "утримання",
+      "l положення на брусах",
+      "положення на брусах",
+      "положення",
+      "брусах"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors",
+      "shoulders",
+      "triceps"
+    ],
+    "equipment": [
+      "dips",
+      "parallettes"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "back-flip",
+    "name": "Back Flip",
+    "search_terms": [
+      "back flip",
+      "back",
+      "flip",
+      "back-flip",
+      "заднє сальто",
+      "заднє",
+      "сальто"
+    ],
+    "modality": "G",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "core",
+      "quads",
+      "glutes",
+      "calves"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "left-arm-dumbbell-snatch",
+    "name": "Left Arm Dumbbell Snatch",
+    "search_terms": [
+      "left arm dumbbell snatch",
+      "left",
+      "arm dumbbell snatch",
+      "arm",
+      "dumbbell snatch",
+      "dumbbell",
+      "snatch",
+      "left arm db snatch",
+      "arm db snatch",
+      "db snatch",
+      "db",
+      "left-arm-dumbbell-snatch",
+      "ривок гантелі лівою рукою",
+      "ривок",
+      "гантелі лівою рукою",
+      "гантелі",
+      "лівою рукою",
+      "лівою",
+      "рукою"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "axle-deadlift",
+    "name": "Axle Deadlift",
+    "search_terms": [
+      "axle deadlift",
+      "axle",
+      "deadlift",
+      "axle-deadlift",
+      "станова тяга с грифом аксель",
+      "станова",
+      "тяга с грифом аксель",
+      "тяга",
+      "грифом аксель",
+      "грифом",
+      "аксель",
+      "axel deadlift",
+      "axel"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-waiters-walk",
+    "name": "Dumbbell Waiters Walk",
+    "search_terms": [
+      "dumbbell waiters walk",
+      "dumbbell",
+      "waiters walk",
+      "waiters",
+      "walk",
+      "db waiters walk",
+      "db",
+      "dumbbell-waiters-walk",
+      "ходьба з гантелею над головою",
+      "ходьба",
+      "гантелею над головою",
+      "гантелею",
+      "над головою",
+      "над",
+      "головою",
+      "waiter carry",
+      "waiter",
+      "carry",
+      "overhead carry",
+      "overhead"
+    ],
+    "modality": "W",
+    "movement_pattern": "carry",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "traps",
+      "core",
+      "glutes",
+      "quads",
+      "calves"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-hang-split-snatch",
+    "name": "Dumbbell Hang Split Snatch",
+    "search_terms": [
+      "dumbbell hang split snatch",
+      "dumbbell",
+      "hang split snatch",
+      "hang",
+      "split snatch",
+      "split",
+      "snatch",
+      "db hang split snatch",
+      "db",
+      "dumbbell-hang-split-snatch",
+      "ривок з вису гантелі у ножиці",
+      "ривок",
+      "вису гантелі у ножиці",
+      "вису",
+      "гантелі у ножиці",
+      "гантелі",
+      "ножиці"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "triple-unders",
+    "name": "Triple-Unders",
+    "search_terms": [
+      "triple-unders",
+      "triple unders",
+      "triple",
+      "unders",
+      "triple under",
+      "under",
+      "потрійні стрибки на скакалці",
+      "потрійні",
+      "стрибки на скакалці",
+      "стрибки",
+      "скакалці",
+      "tu",
+      "скакалка"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "calves",
+      "quads",
+      "glutes",
+      "core",
+      "shoulders"
+    ],
+    "equipment": [
+      "skipping rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "sled-push",
+    "name": "Sled Push",
+    "search_terms": [
+      "sled push",
+      "sled",
+      "push",
+      "sled-push",
+      "штовхання саней",
+      "штовхання",
+      "саней"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "pegboard-ascents",
+    "name": "Pegboard Ascents",
+    "search_terms": [
+      "pegboard ascents",
+      "pegboard",
+      "ascents",
+      "pegboard-ascents",
+      "лазіння по пегборду",
+      "лазіння",
+      "пегборду"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "tire-throw",
+    "name": "Tire Throw",
+    "search_terms": [
+      "tire throw",
+      "tire",
+      "throw",
+      "tire-throw",
+      "викиди шини",
+      "викиди",
+      "шини"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "lower_back",
+      "chest",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "tire"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "backward-run",
+    "name": "Backward Run",
+    "search_terms": [
+      "backward run",
+      "backward",
+      "run",
+      "backward-run",
+      "біг спиною вперед",
+      "біг",
+      "спиною вперед",
+      "спиною",
+      "вперед"
+    ],
+    "modality": "M",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "tire-pull",
+    "name": "Tire Pull",
+    "search_terms": [
+      "tire pull",
+      "tire",
+      "pull",
+      "tire-pull",
+      "тяга шини",
+      "тяга",
+      "шини"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "tire"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "hanging-hip-touches",
+    "name": "Hanging Hip Touches",
+    "search_terms": [
+      "hanging hip touches",
+      "hanging",
+      "hip touches",
+      "hip",
+      "touches",
+      "hanging-hip-touches",
+      "поперемінний вис на одній руці",
+      "поперемінний",
+      "вис на одній руці",
+      "вис",
+      "одній руці",
+      "одній",
+      "руці"
+    ],
+    "modality": "G",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "forearms",
+      "lats",
+      "shoulders",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "handstand-ring-push-up",
+    "name": "Handstand Ring Push-Up",
+    "search_terms": [
+      "handstand ring push-up",
+      "handstand",
+      "ring push-up",
+      "ring",
+      "push-up",
+      "handstand ring push up",
+      "ring push up",
+      "push up",
+      "push",
+      "handstand ring pushup",
+      "ring pushup",
+      "pushup",
+      "handstand ring pushups",
+      "ring pushups",
+      "pushups",
+      "handstand ring push-ups",
+      "ring push-ups",
+      "push-ups",
+      "handstand ring push ups",
+      "ring push ups",
+      "push ups",
+      "handstand-ring-push-up",
+      "віджимання в стійці на кільцях (вниз головою)",
+      "віджимання",
+      "стійці на кільцях (вниз головою)",
+      "стійці",
+      "кільцях (вниз головою)",
+      "кільцях",
+      "(вниз головою)",
+      "(вниз",
+      "головою)",
+      "віджимання в стійці на кільцях вниз головою",
+      "стійці на кільцях вниз головою",
+      "кільцях вниз головою",
+      "вниз головою",
+      "вниз",
+      "головою",
+      "ring handstand push-up",
+      "handstand push-up",
+      "ring handstand push up",
+      "handstand push up",
+      "ring handstand pushup",
+      "handstand pushup",
+      "ring handstand pushups",
+      "handstand pushups",
+      "ring handstand push-ups",
+      "handstand push-ups",
+      "ring handstand push ups",
+      "handstand push ups",
+      "hspu"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [
+      "gymnastic rings"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "atlas-stone-over",
+    "name": "Atlas Stone Over",
+    "search_terms": [
+      "atlas stone over",
+      "atlas",
+      "stone over",
+      "stone",
+      "over",
+      "atlas-stone-over",
+      "перекид каменя атлас через планку",
+      "перекид",
+      "каменя атлас через планку",
+      "каменя",
+      "атлас через планку",
+      "атлас",
+      "через планку",
+      "через",
+      "планку"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "traps",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "stone"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "rescue-randy-drag",
+    "name": "Rescue Randy Drag",
+    "search_terms": [
+      "rescue randy drag",
+      "rescue",
+      "randy drag",
+      "randy",
+      "drag",
+      "rescue-randy-drag",
+      "перетаскування манекена",
+      "перетаскування",
+      "манекена"
+    ],
+    "modality": "W",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core",
+      "forearms"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "split-jerk",
+    "name": "Split Jerk",
+    "search_terms": [
+      "split jerk",
+      "split",
+      "jerk",
+      "split-jerk",
+      "швунг поштовховий у разніжку",
+      "швунг",
+      "поштовховий у разніжку",
+      "поштовховий",
+      "разніжку"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "clean-pull",
+    "name": "Clean Pull",
+    "search_terms": [
+      "clean pull",
+      "clean",
+      "pull",
+      "clean-pull",
+      "поштовахова тяга",
+      "поштовахова",
+      "тяга"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "donkey-kicks",
+    "name": "Donkey Kicks",
+    "search_terms": [
+      "donkey kicks",
+      "donkey",
+      "kicks",
+      "donkey-kicks",
+      "відведення ноги назад в упорі лежачи",
+      "відведення",
+      "ноги назад в упорі лежачи",
+      "ноги",
+      "назад в упорі лежачи",
+      "назад",
+      "упорі лежачи",
+      "упорі",
+      "лежачи"
+    ],
+    "modality": "G",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "buddy-carry",
+    "name": "Buddy Carry",
+    "search_terms": [
+      "buddy carry",
+      "buddy",
+      "carry",
+      "buddy-carry",
+      "перенесення людини",
+      "перенесення",
+      "людини"
+    ],
+    "modality": "W",
+    "movement_pattern": "carry",
+    "muscle_groups": [
+      "core",
+      "upper_back",
+      "traps",
+      "glutes",
+      "quads",
+      "hamstrings",
+      "calves"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "towel-pull-up",
+    "name": "Towel Pull-up",
+    "search_terms": [
+      "towel pull-up",
+      "towel",
+      "pull-up",
+      "towel pull up",
+      "pull up",
+      "pull",
+      "towel pullup",
+      "pullup",
+      "towel pullups",
+      "pullups",
+      "towel pull-ups",
+      "pull-ups",
+      "towel pull ups",
+      "pull ups",
+      "towel-pull-up",
+      "підтягування з рушником",
+      "підтягування",
+      "рушником"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "clean-extension",
+    "name": "Clean Extension",
+    "search_terms": [
+      "clean extension",
+      "clean",
+      "extension",
+      "clean-extension",
+      "поштовхова тяга",
+      "поштовхова",
+      "тяга"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "snatch-pull",
+    "name": "Snatch Pull",
+    "search_terms": [
+      "snatch pull",
+      "snatch",
+      "pull",
+      "snatch-pull",
+      "тяга ривкова",
+      "тяга",
+      "ривкова"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "freestanding-handstand-push-up",
+    "name": "Freestanding Handstand Push-Up",
+    "search_terms": [
+      "freestanding handstand push-up",
+      "freestanding",
+      "handstand push-up",
+      "handstand",
+      "push-up",
+      "freestanding handstand push up",
+      "handstand push up",
+      "push up",
+      "push",
+      "freestanding handstand pushup",
+      "handstand pushup",
+      "pushup",
+      "freestanding handstand pushups",
+      "handstand pushups",
+      "pushups",
+      "freestanding handstand push-ups",
+      "handstand push-ups",
+      "push-ups",
+      "freestanding handstand push ups",
+      "handstand push ups",
+      "push ups",
+      "hspu",
+      "freestanding-handstand-push-up",
+      "віджимання у стійці на руках без опори",
+      "віджимання",
+      "стійці на руках без опори",
+      "стійці",
+      "руках без опори",
+      "руках",
+      "без опори",
+      "без",
+      "опори"
+    ],
+    "modality": "G",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "upper_back",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "squat-jerk",
+    "name": "Squat Jerk",
+    "search_terms": [
+      "squat jerk",
+      "squat",
+      "jerk",
+      "squat-jerk",
+      "поштовховий швунг в сід",
+      "поштовховий",
+      "швунг в сід",
+      "швунг",
+      "сід"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "shoulders",
+      "triceps",
+      "quads",
+      "glutes",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "curtis-ps",
+    "name": "Curtis Ps",
+    "search_terms": [
+      "curtis ps",
+      "curtis",
+      "ps",
+      "curtis-ps",
+      "кертіс п",
+      "кертіс",
+      "curtis p",
+      "curtis p complex",
+      "p complex",
+      "complex"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "dumbbell-split-clean",
+    "name": "Dumbbell Split Clean",
+    "search_terms": [
+      "dumbbell split clean",
+      "dumbbell",
+      "split clean",
+      "split",
+      "clean",
+      "db split clean",
+      "db",
+      "dumbbell-split-clean",
+      "силове взяття гантелей на груди у ножиці",
+      "силове",
+      "взяття гантелей на груди у ножиці",
+      "взяття",
+      "гантелей на груди у ножиці",
+      "гантелей",
+      "груди у ножиці",
+      "груди",
+      "ножиці"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "traps",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "dumbbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "l-sit-rope-climb",
+    "name": "L-Sit Rope Climb",
+    "search_terms": [
+      "l-sit rope climb",
+      "l-sit",
+      "rope climb",
+      "rope",
+      "climb",
+      "l sit rope climb",
+      "sit rope climb",
+      "sit",
+      "l-sit-rope-climb",
+      "лазіння по канату в утримуючи ноги паралельно підлозі",
+      "лазіння",
+      "канату в утримуючи ноги паралельно підлозі",
+      "канату",
+      "утримуючи ноги паралельно підлозі",
+      "утримуючи",
+      "ноги паралельно підлозі",
+      "ноги",
+      "паралельно підлозі",
+      "паралельно",
+      "підлозі"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core",
+      "hip_flexors"
+    ],
+    "equipment": [
+      "climbing rope"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "axel-thruster",
+    "name": "Axel Thruster",
+    "search_terms": [
+      "axel thruster",
+      "axel",
+      "thruster",
+      "axel-thruster",
+      "викиди с грифом аксель",
+      "викиди",
+      "грифом аксель",
+      "грифом",
+      "аксель",
+      "axle thruster",
+      "axle"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "truck-push",
+    "name": "Truck Push",
+    "search_terms": [
+      "truck push",
+      "truck",
+      "push",
+      "truck-push",
+      "штовхання вантажівки",
+      "штовхання",
+      "вантажівки"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "jumping-chest-bar-pull-up",
+    "name": "Jumping Chest To Bar Pull-Up",
+    "search_terms": [
+      "jumping chest to bar pull-up",
+      "jumping",
+      "chest to bar pull-up",
+      "chest",
+      "bar pull-up",
+      "bar",
+      "pull-up",
+      "jumping chest to bar pull up",
+      "chest to bar pull up",
+      "bar pull up",
+      "pull up",
+      "pull",
+      "jumping chest to bar pullup",
+      "chest to bar pullup",
+      "bar pullup",
+      "pullup",
+      "jumping chest to bar pullups",
+      "chest to bar pullups",
+      "bar pullups",
+      "pullups",
+      "jumping chest to bar pull-ups",
+      "chest to bar pull-ups",
+      "bar pull-ups",
+      "pull-ups",
+      "jumping chest to bar pull ups",
+      "chest to bar pull ups",
+      "bar pull ups",
+      "pull ups",
+      "jumping-chest-bar-pull-up",
+      "jumping chest bar pull up",
+      "chest bar pull up",
+      "jumping chest bar pullup",
+      "chest bar pullup",
+      "jumping chest bar pull-up",
+      "chest bar pull-up",
+      "jumping chest bar pullups",
+      "chest bar pullups",
+      "jumping chest bar pull-ups",
+      "chest bar pull-ups",
+      "jumping chest bar pull ups",
+      "chest bar pull ups",
+      "стрибкові підтягування груди до перекладини",
+      "стрибкові",
+      "підтягування груди до перекладини",
+      "підтягування",
+      "груди до перекладини",
+      "груди",
+      "перекладини"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core",
+      "quads",
+      "calves"
+    ],
+    "equipment": [
+      "pull-up bar",
+      "racks"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "paddle",
+    "name": "Paddle",
+    "search_terms": [
+      "paddle",
+      "веслування"
+    ],
+    "modality": "G",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "shoulders",
+      "upper_back",
+      "biceps",
+      "triceps",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "tumbler-pull",
+    "name": "Tumbler Pull",
+    "search_terms": [
+      "tumbler pull",
+      "tumbler",
+      "pull",
+      "tumbler-pull",
+      "тяга тумблера",
+      "тяга",
+      "тумблера"
+    ],
+    "modality": "W",
+    "movement_pattern": "pull",
+    "muscle_groups": [
+      "lats",
+      "upper_back",
+      "biceps",
+      "forearms",
+      "core"
+    ],
+    "equipment": [],
+    "is_archived": false
+  },
+  {
+    "slug": "xpo-trainer-sled-drag",
+    "name": "XPO Trainer Sled Drag",
+    "search_terms": [
+      "xpo trainer sled drag",
+      "xpo",
+      "trainer sled drag",
+      "trainer",
+      "sled drag",
+      "sled",
+      "drag",
+      "xpo-trainer-sled-drag",
+      "тяга xpo саней",
+      "тяга",
+      "xpo саней",
+      "саней"
+    ],
+    "modality": "W",
+    "movement_pattern": "locomotion",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "prowler-push",
+    "name": "Prowler push",
+    "search_terms": [
+      "prowler push",
+      "prowler",
+      "push",
+      "prowler-push",
+      "штовхання саней",
+      "штовхання",
+      "саней"
+    ],
+    "modality": "W",
+    "movement_pattern": "push",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "calves",
+      "shoulders",
+      "triceps",
+      "core"
+    ],
+    "equipment": [
+      "sled"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "barbell-sit-up",
+    "name": "Barbell Sit-Up",
+    "search_terms": [
+      "barbell sit-up",
+      "barbell",
+      "sit-up",
+      "barbell sit up",
+      "sit up",
+      "sit",
+      "barbell situp",
+      "situp",
+      "barbell situps",
+      "situps",
+      "barbell sit-ups",
+      "sit-ups",
+      "barbell sit ups",
+      "sit ups",
+      "barbell-sit-up",
+      "пресс зі штангою (сітап-пресс)",
+      "пресс",
+      "штангою (сітап-пресс)",
+      "штангою",
+      "(сітап-пресс)",
+      "пресс зі штангою сітап пресс",
+      "штангою сітап пресс",
+      "сітап пресс",
+      "сітап"
+    ],
+    "modality": "W",
+    "movement_pattern": "core",
+    "muscle_groups": [
+      "core",
+      "hip_flexors",
+      "shoulders",
+      "chest",
+      "triceps"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "atlas-stone-lunges",
+    "name": "Atlas Stone Lunges",
+    "search_terms": [
+      "atlas stone lunges",
+      "atlas",
+      "stone lunges",
+      "stone",
+      "lunges",
+      "atlas stone lunge",
+      "stone lunge",
+      "lunge",
+      "atlas-stone-lunges",
+      "випади з каменем атлас",
+      "випади",
+      "каменем атлас",
+      "каменем",
+      "атлас"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core"
+    ],
+    "equipment": [
+      "stone"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "log-clean-press",
+    "name": "Log Clean Press",
+    "search_terms": [
+      "log clean press",
+      "log",
+      "clean press",
+      "clean",
+      "press",
+      "log-clean-press",
+      "взяття на груди та поштовх колоди",
+      "взяття",
+      "груди та поштовх колоди",
+      "груди",
+      "поштовх колоди",
+      "поштовх",
+      "колоди",
+      "log clean and press",
+      "clean and press",
+      "log press"
+    ],
+    "modality": "W",
+    "movement_pattern": "other",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "traps",
+      "shoulders",
+      "triceps",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "log"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "rack-pulls",
+    "name": "Rack Pulls",
+    "search_terms": [
+      "rack pulls",
+      "rack",
+      "pulls",
+      "rack-pulls",
+      "станова тяга із стійок",
+      "станова",
+      "тяга із стійок",
+      "тяга",
+      "стійок"
+    ],
+    "modality": "W",
+    "movement_pattern": "hinge",
+    "muscle_groups": [
+      "glutes",
+      "hamstrings",
+      "quads",
+      "lower_back",
+      "core",
+      "forearms"
+    ],
+    "equipment": [
+      "barbell"
+    ],
+    "is_archived": false
+  },
+  {
+    "slug": "pressing-snatch-balance",
+    "name": "Pressing Snatch Balance",
+    "search_terms": [
+      "pressing snatch balance",
+      "pressing",
+      "snatch balance",
+      "snatch",
+      "balance",
+      "pressing-snatch-balance",
+      "силовий риковий баланс",
+      "силовий",
+      "риковий баланс",
+      "риковий",
+      "баланс"
+    ],
+    "modality": "W",
+    "movement_pattern": "squat",
+    "muscle_groups": [
+      "quads",
+      "glutes",
+      "hamstrings",
+      "core",
+      "shoulders",
+      "upper_back"
+    ],
+    "equipment": [
+      "barbell",
+      "barbell plate"
+    ],
+    "is_archived": false
+  }
+]
