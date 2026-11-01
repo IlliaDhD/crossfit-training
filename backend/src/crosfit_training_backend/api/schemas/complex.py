@@ -5,7 +5,7 @@ from uuid import UUID
 from beanie import PydanticObjectId
 from pydantic import BaseModel, ConfigDict, Field
 
-from crosfit_training_backend.api.schemas.exercise_catalog import ExerciseName, Slug
+from crosfit_training_backend.api.schemas.exercise import ExerciseName, Slug
 from crosfit_training_backend.api.schemas.sets import SetIn
 from crosfit_training_backend.api.schemas.training import SectionFormat
 

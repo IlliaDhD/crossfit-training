@@ -1,4 +1,4 @@
-"""Save flow of a training (data-model.md, section 10)."""
+"""Trainings: save flow (data-model.md, section 10) and CRUD rules."""
 
 import datetime as dt
 from collections.abc import Iterable
@@ -19,62 +19,14 @@ from crosfit_training_backend.api.schemas.training import (
     TrainingDB,
     TrainingIn,
 )
-from crosfit_training_backend.exceptions import NotFoundError, UnprocessableError
+from crosfit_training_backend.exceptions import ForbiddenError, NotFoundError
 from crosfit_training_backend.models.complex import Complex
-from crosfit_training_backend.models.exercise import Exercise
-
-
-async def load_exercises(
-    ids: Iterable[PydanticObjectId],
-) -> dict[PydanticObjectId, Exercise]:
-    """All exercises in ONE query. Archived ones stay valid for logs (rule 4.5).
-
-    Raises 404 if any id is missing.
-    """
-    wanted = set(ids)
-    if not wanted:
-        return {}
-    found = {
-        e.id: e for e in await Exercise.find({"_id": {"$in": list(wanted)}}).to_list()
-    }
-    missing = wanted - found.keys()
-    if missing:
-        raise NotFoundError(f"Exercise not found: {sorted(map(str, missing))}")
-    return found
-
-
-async def load_complexes(
-    ids: Iterable[PydanticObjectId], user_id: UUID
-) -> dict[PydanticObjectId, Complex]:
-    """All complexes in ONE query: global templates and the user's own.
-
-    Someone else's template looks exactly like a missing one (404).
-    """
-    wanted = set(ids)
-    if not wanted:
-        return {}
-    found = {
-        c.id: c
-        for c in await Complex.find(
-            {
-                "_id": {"$in": list(wanted)},
-                "$or": [{"owner_id": None}, {"owner_id": user_id}],
-            }
-        ).to_list()
-    }
-    missing = wanted - found.keys()
-    if missing:
-        raise NotFoundError(f"Complex not found: {sorted(map(str, missing))}")
-    return found
-
-
-def check_modality(exercise: Exercise, set_type: str) -> None:
-    """`exercise.modality == set.type`, otherwise 422."""
-    if exercise.modality != set_type:
-        raise UnprocessableError(
-            f"Exercise '{exercise.name}' has modality {exercise.modality}, "
-            f"but the set has type {set_type}"
-        )
+from crosfit_training_backend.models.training import Training
+from crosfit_training_backend.services.catalog import (
+    check_modality,
+    load_complexes,
+    load_exercises,
+)
 
 
 def _with_shared_values(component: SetIn, ref: ComplexRefIn) -> SetIn:
@@ -173,3 +125,94 @@ async def build_training_doc(
         created_at=created_at or now,  # kept when an existing training is replaced
         updated_at=now,
     )
+
+
+# ------------------------------------------------------------------ CRUD
+
+
+def iso_date_range(
+    date_from: dt.date | None, date_to: dt.date | None
+) -> dict[str, str]:
+    """Mongo filter for the `date` field; both bounds are inclusive.
+
+    `date` is stored as an ISO string, so string comparison equals date comparison.
+    Returns an empty dict when no bound is given.
+    """
+    bounds: dict[str, str] = {}
+    if date_from:
+        bounds["$gte"] = date_from.isoformat()
+    if date_to:
+        bounds["$lte"] = date_to.isoformat()
+    return bounds
+
+
+async def get_own_training(training_id: PydanticObjectId, user_id: UUID) -> Training:
+    """404 for a missing training, 403 for someone else's (data-model.md, 13)."""
+    training = await Training.get(training_id)
+    if training is None:
+        raise NotFoundError("Training not found")
+    if training.user_id != user_id:
+        raise ForbiddenError()
+    return training
+
+
+async def create_training(payload: TrainingIn, user_id: UUID) -> Training:
+    """Complex references are expanded into plain sets, every set gets a snapshot."""
+    built = await build_training_doc(payload, user_id=user_id, created_by=user_id)
+    training = Training(**built.model_dump())
+    await training.insert()
+    return training
+
+
+async def list_trainings(
+    user_id: UUID,
+    *,
+    date_from: dt.date | None,
+    date_to: dt.date | None,
+    limit: int,
+    offset: int,
+) -> tuple[list[Training], int]:
+    """Own trainings, newest first, and the total count for the filter."""
+    query: dict = {"user_id": user_id}
+    if date_range := iso_date_range(date_from, date_to):
+        query["date"] = date_range
+
+    found = Training.find(query)
+    total = await found.count()
+    items = (
+        await found.sort([("date", -1), ("created_at", -1)])
+        .skip(offset)
+        .limit(limit)
+        .to_list()
+    )
+    return items, total
+
+
+async def replace_training(
+    training_id: PydanticObjectId, payload: TrainingIn, user_id: UUID
+) -> Training:
+    """Rebuild the whole document from the payload.
+
+    Expanded sets are never patched by hand (data-model.md, 7.3). Ownership and
+    `created_at` are kept, `updated_at` is refreshed.
+    """
+    training = await get_own_training(training_id, user_id)
+    built = await build_training_doc(
+        payload,
+        user_id=training.user_id,
+        created_by=training.created_by,
+        created_at=training.created_at,
+    )
+    training.schema_version = built.schema_version
+    training.title = built.title
+    training.date = built.date
+    training.comment = built.comment
+    training.sections = built.sections
+    training.updated_at = built.updated_at
+    await training.save()
+    return training
+
+
+async def delete_training(training_id: PydanticObjectId, user_id: UUID) -> None:
+    training = await get_own_training(training_id, user_id)
+    await training.delete()

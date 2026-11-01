@@ -4,7 +4,7 @@ import pytest
 from httpx import ASGITransport, AsyncClient
 from pydantic import ValidationError
 
-from crosfit_training_backend.api.schemas.exercise_catalog import (
+from crosfit_training_backend.api.schemas.exercise import (
     ExerciseIn,
     ExerciseUpdate,
 )
