@@ -8,6 +8,8 @@
 Перевірка результату: `docker compose logs mongo-seed`.
 [Інструкції з наповнення каталогу та локального запуску](scripts/README.md).
 
+[CI checks and automatic Swagger generation](docs/ci.md).
+
 ---
 
 ## 🛠 Технологічний стек
