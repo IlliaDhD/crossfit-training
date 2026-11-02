@@ -1,4 +1,4 @@
-"""Integration tests: a running MongoDB is required (like for test_exercises)."""
+"""Integration tests using MongoDB managed by Testcontainers."""
 
 import asyncio
 import datetime as dt

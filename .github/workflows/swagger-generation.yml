@@ -1,0 +1,50 @@
+name: Swagger generation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - backend/src/crosfit_training_backend/api/**
+
+permissions:
+  contents: read
+
+# Serialize writers. Check out the current main so queued runs generate its schema.
+concurrency:
+  group: swagger-generation-main
+  cancel-in-progress: false
+
+jobs:
+  swagger-generation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: astral-sh/setup-uv@v7
+        with:
+          version: '0.13.6'
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+      - name: Install backend dependencies
+        working-directory: backend
+        run: uv sync --locked
+      - name: Generate Swagger
+        working-directory: backend
+        run: uv run python src/crosfit_training_backend/common/swagger_generator.py --path ../docs/backend-swagger.json
+      - name: Commit changed schema
+        shell: bash
+        run: |
+          git add -- docs/backend-swagger.json
+          if git diff --cached --quiet; then
+            echo "Swagger schema is unchanged."
+            exit 0
+          fi
+          tag=$(git describe --tags --abbrev=0 2>/dev/null || echo '0.0.0')
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m "chore(swagger): regenerate backend schema for ${tag}"
+          git push origin HEAD:main

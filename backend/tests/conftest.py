@@ -5,6 +5,7 @@ import pytest
 import pytest_asyncio
 from httpx import ASGITransport, AsyncClient
 from pymongo import AsyncMongoClient
+from testcontainers.community.mongodb import MongoDbContainer
 
 from crosfit_training_backend.api import dependencies
 from crosfit_training_backend.api.dependencies import get_current_user
@@ -13,7 +14,6 @@ from crosfit_training_backend.database import init_db
 from crosfit_training_backend.main import app
 from crosfit_training_backend.models.exercise import Exercise
 from crosfit_training_backend.services.exercises import build_search_terms
-from crosfit_training_backend.settings import get_settings
 
 TEST_DB = "crossfit_test"
 
@@ -51,17 +51,50 @@ def login():
     app.dependency_overrides.clear()
 
 
+@pytest.fixture(scope="session")
+def mongo_container():
+    """Share one isolated MongoDB container across database tests."""
+    mongo = MongoDbContainer("mongo:8")
+    # __enter__ removes failed containers before their logs can be collected.
+    # Manage the lifecycle explicitly to keep startup diagnostics in pytest.
+    try:
+        try:
+            mongo.start()
+            # Mongo's entrypoint starts a temporary server before the final one.
+            # Wait for an authenticated connection through the published port.
+            with mongo.get_connection_client() as client:
+                client.admin.command("ping")
+        except Exception as error:
+            try:
+                stdout, stderr = mongo.get_logs()
+                error.add_note(
+                    "MongoDB startup logs:\n"
+                    f"stdout:\n{stdout.decode(errors='replace')}\n"
+                    f"stderr:\n{stderr.decode(errors='replace')}"
+                )
+            except Exception as log_error:
+                error.add_note(f"Could not collect MongoDB logs: {log_error}")
+            raise
+        yield mongo
+    finally:
+        mongo.stop()
+
+
 @pytest_asyncio.fixture
-async def db():
+async def db(mongo_container):
     mongo = AsyncMongoClient(
-        get_settings().MONGO_URL,
+        mongo_container.get_connection_url(),
         uuidRepresentation="standard",
         serverSelectionTimeoutMS=3000,
     )
-    await init_db(mongo, TEST_DB)
-    yield mongo[TEST_DB]
-    await mongo.drop_database(TEST_DB)
-    await mongo.close()
+    try:
+        await init_db(mongo, TEST_DB)
+        yield mongo[TEST_DB]
+    finally:
+        try:
+            await mongo.drop_database(TEST_DB)
+        finally:
+            await mongo.close()
 
 
 @pytest_asyncio.fixture
