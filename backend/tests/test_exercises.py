@@ -1,4 +1,4 @@
-"""Інтеграційні тести: потрібна запущена MongoDB (як і для test_trainings)."""
+"""Інтеграційні тести з MongoDB, якою керує Testcontainers."""
 
 from bson import ObjectId
 
