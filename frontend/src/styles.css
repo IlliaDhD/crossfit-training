@@ -1,1 +1,110 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles of the application UI. All classes are prefixed with `x-`
+   so they never collide with the component styles of the welcome page. */
+:root {
+  /* light theme */
+  --x-bg: #f3f5fb;
+  --x-surface: #ffffff;
+  --x-surface-2: #eef1f9;
+  --x-bar: rgba(243, 245, 251, 0.92);
+  --x-border: rgba(24, 32, 80, 0.14);
+  --x-border-strong: rgba(24, 32, 80, 0.32);
+  --x-overlay: rgba(24, 32, 80, 0.045);
+  --x-overlay-2: rgba(24, 32, 80, 0.09);
+  --x-hover: #e2e7f5;
+  --x-text: #1b2038;
+  --x-muted: #5b6385;
+  --x-accent: #e23556;
+  --x-accent-hover: #c9264a;
+  --x-accent-soft: rgba(226, 53, 86, 0.12);
+  --x-ok: #0b8f6a;
+  --x-warn: #b45309;
+  --x-shadow: 0 14px 40px rgba(24, 32, 80, 0.22);
+  --x-backdrop: rgba(24, 32, 80, 0.45);
+  --x-g: #4cc9f0;
+  --x-w: #ff7a90;
+  --x-m: #ffd166;
+}
+
+body { margin: 0; }
+
+.x-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--x-border);
+  border-radius: 10px;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--x-text);
+  background: var(--x-surface-2);
+  text-decoration: none;
+  transition: transform 0.12s, background 0.12s;
+}
+.x-btn:hover { transform: translateY(-1px); background: var(--x-hover); }
+.x-btn:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+.x-btn.primary { background: var(--x-accent); border-color: transparent; color: #fff; }
+.x-btn.primary:hover { background: var(--x-accent-hover); }
+.x-btn.ghost { background: transparent; }
+.x-btn.danger { background: transparent; color: #c01742; border-color: rgba(226, 53, 86, 0.5); }
+.x-btn.small { padding: 0.3rem 0.7rem; font-size: 0.85rem; border-radius: 8px; }
+.x-btn:focus-visible, .x-input:focus-visible { outline: 2px solid var(--x-ok); outline-offset: 1px; }
+
+.x-input {
+  box-sizing: border-box;
+  width: 100%;
+  color-scheme: light;
+  color: var(--x-text);
+  background: var(--x-surface-2);
+  border: 1px solid var(--x-border);
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  font: inherit;
+}
+.x-input::placeholder { color: var(--x-muted); }
+
+.x-card {
+  background: var(--x-surface);
+  border: 1px solid var(--x-border);
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  color: var(--x-text);
+  font: inherit;
+  text-align: left;
+}
+
+.x-chip {
+  display: inline-block;
+  padding: 0.12rem 0.6rem;
+  border-radius: 999px;
+  background: var(--x-overlay-2);
+  color: var(--x-muted);
+  font-size: 0.78rem;
+}
+
+.x-badge {
+  display: inline-block;
+  min-width: 1.4rem;
+  text-align: center;
+  padding: 0.1rem 0.45rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10122a;
+  background: var(--x-muted);
+}
+.x-badge[data-m='G'] { background: var(--x-g); }
+.x-badge[data-m='W'] { background: var(--x-w); }
+.x-badge[data-m='M'] { background: var(--x-m); }
+
+.x-muted { color: var(--x-muted); }
+.x-error {
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  background: rgba(226, 53, 86, 0.1);
+  border: 1px solid rgba(226, 53, 86, 0.45);
+  color: #a3122f;
+}
+.x-empty { text-align: center; color: var(--x-muted); padding: 2rem 1rem; }
