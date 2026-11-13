@@ -1,0 +1,3678 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+        "title": "Crossfit Training API",
+        "version": "0.1.0"
+    },
+    "paths": {
+        "/me": {
+            "get": {
+                "tags": [
+                    "auth"
+                ],
+                "summary": "Read Me",
+                "description": "Who the access token belongs to: `user_id` (sub), username and roles.",
+                "operationId": "read_me_me_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/AuthUser"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ]
+            }
+        },
+        "/me/profile": {
+            "get": {
+                "tags": [
+                    "athlete profile"
+                ],
+                "summary": "Get Profile",
+                "operationId": "get_profile_me_profile_get",
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/AthleteProfileOut"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ]
+            },
+            "patch": {
+                "tags": [
+                    "athlete profile"
+                ],
+                "summary": "Patch Profile",
+                "operationId": "patch_profile_me_profile_patch",
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/AthleteProfilePatch"
+                            }
+                        }
+                    },
+                    "required": true
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/AthleteProfileOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ]
+            }
+        },
+        "/me/body-measurements": {
+            "get": {
+                "tags": [
+                    "athlete profile"
+                ],
+                "summary": "List Body Measurements",
+                "operationId": "list_body_measurements_me_body_measurements_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date From"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date To"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "maximum": 500,
+                            "minimum": 1,
+                            "default": 100,
+                            "title": "Limit"
+                        }
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "default": 0,
+                            "title": "Offset"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/BodyMeasurementListOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/me/body-measurements/{measurement_date}": {
+            "get": {
+                "tags": [
+                    "athlete profile"
+                ],
+                "summary": "Get Body Measurement",
+                "operationId": "get_body_measurement_me_body_measurements__measurement_date__get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "measurement_date",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "date",
+                            "title": "Measurement Date"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/BodyMeasurementOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "athlete profile"
+                ],
+                "summary": "Put Body Measurement",
+                "description": "Upsert by date: one value per user/day, PUT again to edit.",
+                "operationId": "put_body_measurement_me_body_measurements__measurement_date__put",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "measurement_date",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "date",
+                            "title": "Measurement Date"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/BodyMeasurementIn"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/BodyMeasurementOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "athlete profile"
+                ],
+                "summary": "Delete Body Measurement",
+                "operationId": "delete_body_measurement_me_body_measurements__measurement_date__delete",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "measurement_date",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "format": "date",
+                            "title": "Measurement Date"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful Response"
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/exercises": {
+            "post": {
+                "tags": [
+                    "exercises"
+                ],
+                "summary": "Create Exercise",
+                "operationId": "create_exercise_exercises_post",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ExerciseIn"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ExerciseOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "exercises"
+                ],
+                "summary": "List Exercises",
+                "operationId": "list_exercises_exercises_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "modality",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "enum": [
+                                        "G",
+                                        "W",
+                                        "M"
+                                    ],
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "title": "Modality"
+                        }
+                    },
+                    {
+                        "name": "movement_pattern",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "enum": [
+                                        "squat",
+                                        "hinge",
+                                        "push",
+                                        "pull",
+                                        "carry",
+                                        "core",
+                                        "locomotion",
+                                        "other"
+                                    ],
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "title": "Movement Pattern"
+                        }
+                    },
+                    {
+                        "name": "muscle_groups",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "\u0411\u0443\u0434\u044c-\u044f\u043a\u0430 \u0437 \u0443\u043a\u0430\u0437\u0430\u043d\u0438\u0445 \u0433\u0440\u0443\u043f \u043c'\u044f\u0437\u0456\u0432",
+                            "title": "Muscle Groups"
+                        },
+                        "description": "\u0411\u0443\u0434\u044c-\u044f\u043a\u0430 \u0437 \u0443\u043a\u0430\u0437\u0430\u043d\u0438\u0445 \u0433\u0440\u0443\u043f \u043c'\u044f\u0437\u0456\u0432"
+                    },
+                    {
+                        "name": "equipment",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "\u0411\u0443\u0434\u044c-\u044f\u043a\u0435 \u0437 \u0443\u043a\u0430\u0437\u0430\u043d\u043e\u0433\u043e \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f",
+                            "title": "Equipment"
+                        },
+                        "description": "\u0411\u0443\u0434\u044c-\u044f\u043a\u0435 \u0437 \u0443\u043a\u0430\u0437\u0430\u043d\u043e\u0433\u043e \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "maximum": 100,
+                            "minimum": 1,
+                            "default": 20,
+                            "title": "Limit"
+                        }
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "default": 0,
+                            "title": "Offset"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ExerciseListOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/exercises/search": {
+            "get": {
+                "tags": [
+                    "exercises"
+                ],
+                "summary": "Search Exercises",
+                "operationId": "search_exercises_exercises_search_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 50,
+                            "description": "Prefix",
+                            "title": "Q"
+                        },
+                        "description": "Prefix"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/ExerciseSearchOut"
+                                    },
+                                    "title": "Response Search Exercises Exercises Search Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/exercises/{exercise_id}": {
+            "get": {
+                "tags": [
+                    "exercises"
+                ],
+                "summary": "Get Exercise",
+                "operationId": "get_exercise_exercises__exercise_id__get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "exercise_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ExerciseOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "exercises"
+                ],
+                "summary": "Update Exercise",
+                "operationId": "update_exercise_exercises__exercise_id__patch",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "exercise_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ExerciseUpdate"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ExerciseOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "exercises"
+                ],
+                "summary": "Archive Exercise",
+                "operationId": "archive_exercise_exercises__exercise_id__delete",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "exercise_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful Response"
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/complexes": {
+            "post": {
+                "tags": [
+                    "complexes"
+                ],
+                "summary": "Create Complex",
+                "description": "Create a template owned by the current user. `is_global` is admin only.",
+                "operationId": "create_complex_complexes_post",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/ComplexIn"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ComplexOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "complexes"
+                ],
+                "summary": "List Complexes",
+                "operationId": "list_complexes_complexes_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "q",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "maxLength": 50
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "Name prefix, case-insensitive",
+                            "title": "Q"
+                        },
+                        "description": "Name prefix, case-insensitive"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "maximum": 100,
+                            "minimum": 1,
+                            "default": 20,
+                            "title": "Limit"
+                        }
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "default": 0,
+                            "title": "Offset"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ComplexListOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/complexes/{complex_id}": {
+            "get": {
+                "tags": [
+                    "complexes"
+                ],
+                "summary": "Get Complex",
+                "operationId": "get_complex_complexes__complex_id__get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "complex_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/ComplexOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "complexes"
+                ],
+                "summary": "Archive Complex",
+                "operationId": "archive_complex_complexes__complex_id__delete",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "complex_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful Response"
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/trainings": {
+            "post": {
+                "tags": [
+                    "trainings"
+                ],
+                "summary": "Create Training",
+                "description": "Save a logged workout. Complex references are expanded into plain sets and\nevery set gets an exercise snapshot.",
+                "operationId": "create_training_trainings_post",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/TrainingIn"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TrainingOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": [
+                    "trainings"
+                ],
+                "summary": "List Trainings",
+                "description": "Own trainings, newest first. Used by the calendar and list views.",
+                "operationId": "list_trainings_trainings_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date From"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date To"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "maximum": 100,
+                            "minimum": 1,
+                            "default": 20,
+                            "title": "Limit"
+                        }
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "integer",
+                            "minimum": 0,
+                            "default": 0,
+                            "title": "Offset"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TrainingListOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/trainings/{training_id}": {
+            "get": {
+                "tags": [
+                    "trainings"
+                ],
+                "summary": "Get Training",
+                "operationId": "get_training_trainings__training_id__get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "training_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TrainingOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "trainings"
+                ],
+                "summary": "Replace Training",
+                "description": "Replace the whole training; the document is rebuilt from the payload.",
+                "operationId": "replace_training_trainings__training_id__put",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "training_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/TrainingIn"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/TrainingOut"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "trainings"
+                ],
+                "summary": "Delete Training",
+                "operationId": "delete_training_trainings__training_id__delete",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "training_id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Successful Response"
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stats/weekly-tonnage": {
+            "get": {
+                "tags": [
+                    "stats"
+                ],
+                "summary": "Get Weekly Tonnage",
+                "description": "Weekly tonnage of the current user by movement pattern.",
+                "operationId": "get_weekly_tonnage_stats_weekly_tonnage_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date From"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date To"
+                        },
+                        "description": "inclusive"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/WeeklyTonnageOut"
+                                    },
+                                    "title": "Response Get Weekly Tonnage Stats Weekly Tonnage Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stats/relative-strength": {
+            "get": {
+                "tags": [
+                    "stats"
+                ],
+                "summary": "Get Relative Strength",
+                "description": "Daily best W set divided by historical body weight on/before that day.",
+                "operationId": "get_relative_strength_stats_relative_strength_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "exercise_id",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/components/schemas/PydanticObjectId"
+                        }
+                    },
+                    {
+                        "name": "reps",
+                        "in": "query",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "title": "Reps"
+                        }
+                    },
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date From"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date To"
+                        },
+                        "description": "inclusive"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/RelativeStrengthPoint"
+                                    },
+                                    "title": "Response Get Relative Strength Stats Relative Strength Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stats/tonnage": {
+            "get": {
+                "tags": [
+                    "stats"
+                ],
+                "summary": "Get Tonnage",
+                "description": "Sum of W weight x reps, grouped across requested period.",
+                "operationId": "get_tonnage_stats_tonnage_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "group_by",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "enum": [
+                                "week",
+                                "exercise",
+                                "movement_pattern"
+                            ],
+                            "type": "string",
+                            "default": "week",
+                            "title": "Group By"
+                        }
+                    },
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date From"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date To"
+                        },
+                        "description": "inclusive"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/TonnagePoint"
+                                    },
+                                    "title": "Response Get Tonnage Stats Tonnage Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stats/strength-records": {
+            "get": {
+                "tags": [
+                    "stats"
+                ],
+                "summary": "Get Strength Records",
+                "description": "All-time new maximum per exercise and exact reps, filtered after scoring.",
+                "operationId": "get_strength_records_stats_strength_records_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "exercise_id",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "$ref": "#/components/schemas/PydanticObjectId"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "title": "Exercise Id"
+                        }
+                    },
+                    {
+                        "name": "reps",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "integer",
+                                    "exclusiveMinimum": 0
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "title": "Reps"
+                        }
+                    },
+                    {
+                        "name": "date_from",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date From"
+                        },
+                        "description": "inclusive"
+                    },
+                    {
+                        "name": "date_to",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "type": "string",
+                                    "format": "date"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "description": "inclusive",
+                            "title": "Date To"
+                        },
+                        "description": "inclusive"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/StrengthRecord"
+                                    },
+                                    "title": "Response Get Strength Records Stats Strength Records Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/stats/distance-bests": {
+            "get": {
+                "tags": [
+                    "stats"
+                ],
+                "summary": "Get Distance Bests",
+                "description": "Best M time per exact (exercise_id, distance) combination.",
+                "operationId": "get_distance_bests_stats_distance_bests_get",
+                "security": [
+                    {
+                        "HTTPBearer": []
+                    }
+                ],
+                "parameters": [
+                    {
+                        "name": "exercise_id",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "anyOf": [
+                                {
+                                    "$ref": "#/components/schemas/PydanticObjectId"
+                                },
+                                {
+                                    "type": "null"
+                                }
+                            ],
+                            "title": "Exercise Id"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful Response",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/DistanceBest"
+                                    },
+                                    "title": "Response Get Distance Bests Stats Distance Bests Get"
+                                }
+                            }
+                        }
+                    },
+                    "422": {
+                        "description": "Validation Error",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/HTTPValidationError"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AthleteProfileOut": {
+                "properties": {
+                    "birth_date": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "format": "date"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Birth Date"
+                    },
+                    "height_cm": {
+                        "anyOf": [
+                            {
+                                "type": "number"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Height Cm"
+                    },
+                    "current_weight_kg": {
+                        "anyOf": [
+                            {
+                                "type": "number"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Current Weight Kg"
+                    },
+                    "current_weight_date": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "format": "date"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Current Weight Date"
+                    }
+                },
+                "type": "object",
+                "title": "AthleteProfileOut"
+            },
+            "AthleteProfilePatch": {
+                "properties": {
+                    "birth_date": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "format": "date"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Birth Date"
+                    },
+                    "height_cm": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Height Cm"
+                    }
+                },
+                "type": "object",
+                "title": "AthleteProfilePatch",
+                "description": "Omitted properties remain unchanged; explicit null removes the value."
+            },
+            "AuthUser": {
+                "properties": {
+                    "user_id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "title": "User Id",
+                        "description": "Keycloak `sub`; used as `user_id` in documents"
+                    },
+                    "username": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Username"
+                    },
+                    "roles": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Roles"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "user_id"
+                ],
+                "title": "AuthUser",
+                "description": "The authenticated user. There is no users collection: identity is the token."
+            },
+            "BodyMeasurementIn": {
+                "properties": {
+                    "weight_kg": {
+                        "type": "number",
+                        "exclusiveMinimum": 0.0,
+                        "title": "Weight Kg"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "weight_kg"
+                ],
+                "title": "BodyMeasurementIn"
+            },
+            "BodyMeasurementListOut": {
+                "properties": {
+                    "items": {
+                        "items": {
+                            "$ref": "#/components/schemas/BodyMeasurementOut"
+                        },
+                        "type": "array",
+                        "title": "Items"
+                    },
+                    "total": {
+                        "type": "integer",
+                        "title": "Total"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "title": "Limit"
+                    },
+                    "offset": {
+                        "type": "integer",
+                        "title": "Offset"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "items",
+                    "total",
+                    "limit",
+                    "offset"
+                ],
+                "title": "BodyMeasurementListOut"
+            },
+            "BodyMeasurementOut": {
+                "properties": {
+                    "weight_kg": {
+                        "type": "number",
+                        "exclusiveMinimum": 0.0,
+                        "title": "Weight Kg"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Date"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "weight_kg",
+                    "date"
+                ],
+                "title": "BodyMeasurementOut"
+            },
+            "CardioSetDB": {
+                "properties": {
+                    "exercise": {
+                        "$ref": "#/components/schemas/ExerciseSnapshot"
+                    },
+                    "complex": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/ComplexMarker"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "type": {
+                        "type": "string",
+                        "const": "M",
+                        "title": "Type"
+                    },
+                    "time": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time",
+                        "description": "seconds"
+                    },
+                    "calories": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Calories",
+                        "description": "kcal"
+                    },
+                    "distance": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Distance",
+                        "description": "meters"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "exercise",
+                    "exercise_id",
+                    "type"
+                ],
+                "title": "CardioSetDB"
+            },
+            "CardioSetIn": {
+                "properties": {
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "type": {
+                        "type": "string",
+                        "const": "M",
+                        "title": "Type"
+                    },
+                    "time": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time",
+                        "description": "seconds"
+                    },
+                    "calories": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Calories",
+                        "description": "kcal"
+                    },
+                    "distance": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Distance",
+                        "description": "meters"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "exercise_id",
+                    "type"
+                ],
+                "title": "CardioSetIn"
+            },
+            "ComplexIn": {
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "title": "Name"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "pattern": "^[a-z0-9-]+$",
+                        "title": "Slug"
+                    },
+                    "tags": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Tags"
+                    },
+                    "format": {
+                        "type": "string",
+                        "enum": [
+                            "standard",
+                            "amrap",
+                            "emom",
+                            "for_time",
+                            "tabata"
+                        ],
+                        "title": "Format",
+                        "default": "standard"
+                    },
+                    "rounds": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Rounds"
+                    },
+                    "time_cap": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time Cap",
+                        "description": "seconds"
+                    },
+                    "items": {
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "$ref": "#/components/schemas/GymSetIn"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/WeightSetIn"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/CardioSetIn"
+                                }
+                            ],
+                            "discriminator": {
+                                "propertyName": "type",
+                                "mapping": {
+                                    "G": "#/components/schemas/GymSetIn",
+                                    "M": "#/components/schemas/CardioSetIn",
+                                    "W": "#/components/schemas/WeightSetIn"
+                                }
+                            }
+                        },
+                        "type": "array",
+                        "minItems": 1,
+                        "title": "Items"
+                    },
+                    "is_global": {
+                        "type": "boolean",
+                        "title": "Is Global",
+                        "description": "Global template visible to everyone. Admin only.",
+                        "default": false
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "name",
+                    "slug",
+                    "items"
+                ],
+                "title": "ComplexIn"
+            },
+            "ComplexListOut": {
+                "properties": {
+                    "items": {
+                        "items": {
+                            "$ref": "#/components/schemas/ComplexOut"
+                        },
+                        "type": "array",
+                        "title": "Items"
+                    },
+                    "total": {
+                        "type": "integer",
+                        "title": "Total"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "title": "Limit"
+                    },
+                    "offset": {
+                        "type": "integer",
+                        "title": "Offset"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "items",
+                    "total",
+                    "limit",
+                    "offset"
+                ],
+                "title": "ComplexListOut"
+            },
+            "ComplexMarker": {
+                "properties": {
+                    "id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "round": {
+                        "type": "integer",
+                        "minimum": 1.0,
+                        "title": "Round"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "id",
+                    "name",
+                    "round"
+                ],
+                "title": "ComplexMarker",
+                "description": "Marks a set that came from an expanded complex. UI groups by `id` + `round`."
+            },
+            "ComplexOut": {
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "title": "Name"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "pattern": "^[a-z0-9-]+$",
+                        "title": "Slug"
+                    },
+                    "tags": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Tags"
+                    },
+                    "format": {
+                        "type": "string",
+                        "enum": [
+                            "standard",
+                            "amrap",
+                            "emom",
+                            "for_time",
+                            "tabata"
+                        ],
+                        "title": "Format",
+                        "default": "standard"
+                    },
+                    "rounds": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Rounds"
+                    },
+                    "time_cap": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time Cap",
+                        "description": "seconds"
+                    },
+                    "items": {
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "$ref": "#/components/schemas/GymSetIn"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/WeightSetIn"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/CardioSetIn"
+                                }
+                            ],
+                            "discriminator": {
+                                "propertyName": "type",
+                                "mapping": {
+                                    "G": "#/components/schemas/GymSetIn",
+                                    "M": "#/components/schemas/CardioSetIn",
+                                    "W": "#/components/schemas/WeightSetIn"
+                                }
+                            }
+                        },
+                        "type": "array",
+                        "minItems": 1,
+                        "title": "Items"
+                    },
+                    "owner_id": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "format": "uuid"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Owner Id",
+                        "description": "Keycloak `sub` of the owner; null means a global template"
+                    },
+                    "is_archived": {
+                        "type": "boolean",
+                        "title": "Is Archived",
+                        "default": false
+                    },
+                    "id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "name",
+                    "slug",
+                    "items",
+                    "id"
+                ],
+                "title": "ComplexOut"
+            },
+            "ComplexRefIn": {
+                "properties": {
+                    "type": {
+                        "type": "string",
+                        "const": "complex",
+                        "title": "Type"
+                    },
+                    "complex_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "rounds": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0.0,
+                        "title": "Rounds",
+                        "description": "how many times the complex was performed",
+                        "default": 1
+                    },
+                    "weight": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Weight",
+                        "description": "kilograms; shared weight for W and G components without own weight"
+                    },
+                    "rpe": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "maximum": 10.0,
+                                "minimum": 1.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Rpe",
+                        "description": "applied to W components without own rpe"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "type",
+                    "complex_id"
+                ],
+                "title": "ComplexRefIn",
+                "description": "Reference to a complex template; expanded into plain sets on save."
+            },
+            "DistanceBest": {
+                "properties": {
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "exercise_name": {
+                        "type": "string",
+                        "title": "Exercise Name"
+                    },
+                    "distance": {
+                        "type": "integer",
+                        "title": "Distance",
+                        "description": "meters"
+                    },
+                    "time_seconds": {
+                        "type": "integer",
+                        "title": "Time Seconds"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Date"
+                    },
+                    "training_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "exercise_id",
+                    "exercise_name",
+                    "distance",
+                    "time_seconds",
+                    "date",
+                    "training_id"
+                ],
+                "title": "DistanceBest"
+            },
+            "ExerciseIn": {
+                "properties": {
+                    "slug": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "pattern": "^[a-z0-9-]+$",
+                        "title": "Slug"
+                    },
+                    "name": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "title": "Name"
+                    },
+                    "modality": {
+                        "type": "string",
+                        "enum": [
+                            "G",
+                            "W",
+                            "M"
+                        ],
+                        "title": "Modality",
+                        "description": "G - gymnastics, W - weight, M - cardio"
+                    },
+                    "movement_pattern": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "squat",
+                                    "hinge",
+                                    "push",
+                                    "pull",
+                                    "carry",
+                                    "core",
+                                    "locomotion",
+                                    "other"
+                                ]
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Movement Pattern"
+                    },
+                    "muscle_groups": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Muscle Groups"
+                    },
+                    "equipment": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Equipment"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "slug",
+                    "name",
+                    "modality"
+                ],
+                "title": "ExerciseIn"
+            },
+            "ExerciseListOut": {
+                "properties": {
+                    "items": {
+                        "items": {
+                            "$ref": "#/components/schemas/ExerciseOut"
+                        },
+                        "type": "array",
+                        "title": "Items"
+                    },
+                    "total": {
+                        "type": "integer",
+                        "title": "Total"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "title": "Limit"
+                    },
+                    "offset": {
+                        "type": "integer",
+                        "title": "Offset"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "items",
+                    "total",
+                    "limit",
+                    "offset"
+                ],
+                "title": "ExerciseListOut"
+            },
+            "ExerciseOut": {
+                "properties": {
+                    "id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "title": "Slug"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "search_terms": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Search Terms"
+                    },
+                    "modality": {
+                        "type": "string",
+                        "enum": [
+                            "G",
+                            "W",
+                            "M"
+                        ],
+                        "title": "Modality"
+                    },
+                    "movement_pattern": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "squat",
+                                    "hinge",
+                                    "push",
+                                    "pull",
+                                    "carry",
+                                    "core",
+                                    "locomotion",
+                                    "other"
+                                ]
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Movement Pattern"
+                    },
+                    "muscle_groups": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Muscle Groups"
+                    },
+                    "equipment": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Equipment"
+                    },
+                    "is_archived": {
+                        "type": "boolean",
+                        "title": "Is Archived"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "id",
+                    "slug",
+                    "name",
+                    "search_terms",
+                    "modality",
+                    "movement_pattern",
+                    "muscle_groups",
+                    "equipment",
+                    "is_archived"
+                ],
+                "title": "ExerciseOut"
+            },
+            "ExerciseSearchOut": {
+                "properties": {
+                    "id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "slug": {
+                        "type": "string",
+                        "title": "Slug"
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "modality": {
+                        "type": "string",
+                        "enum": [
+                            "G",
+                            "W",
+                            "M"
+                        ],
+                        "title": "Modality"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "id",
+                    "slug",
+                    "name",
+                    "modality"
+                ],
+                "title": "ExerciseSearchOut",
+                "description": "\u041a\u043e\u0440\u043e\u0442\u043a\u0438\u0439 \u0444\u043e\u0440\u043c\u0430\u0442 \u0434\u043b\u044f \u0430\u0432\u0442\u043e\u043a\u043e\u043c\u043f\u043b\u0456\u0442\u0443: modality \u043f\u043e\u0442\u0440\u0456\u0431\u0435\u043d UI \u0434\u043b\u044f \u043f\u043e\u043b\u0456\u0432 \u043f\u0456\u0434\u0445\u043e\u0434\u0443."
+            },
+            "ExerciseSnapshot": {
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Name"
+                    },
+                    "movement_pattern": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Movement Pattern"
+                    },
+                    "muscle_groups": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Muscle Groups"
+                    },
+                    "equipment": {
+                        "items": {
+                            "type": "string"
+                        },
+                        "type": "array",
+                        "title": "Equipment"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "name"
+                ],
+                "title": "ExerciseSnapshot",
+                "description": "Copy of the exercise data kept inside every saved set (principle 4)."
+            },
+            "ExerciseUpdate": {
+                "properties": {
+                    "name": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "maxLength": 120,
+                                "minLength": 1
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Name"
+                    },
+                    "modality": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "G",
+                                    "W",
+                                    "M"
+                                ]
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Modality"
+                    },
+                    "movement_pattern": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "enum": [
+                                    "squat",
+                                    "hinge",
+                                    "push",
+                                    "pull",
+                                    "carry",
+                                    "core",
+                                    "locomotion",
+                                    "other"
+                                ]
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Movement Pattern"
+                    },
+                    "muscle_groups": {
+                        "anyOf": [
+                            {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Muscle Groups"
+                    },
+                    "equipment": {
+                        "anyOf": [
+                            {
+                                "items": {
+                                    "type": "string"
+                                },
+                                "type": "array"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Equipment"
+                    }
+                },
+                "type": "object",
+                "title": "ExerciseUpdate",
+                "description": "\u0427\u0430\u0441\u0442\u043a\u043e\u0432\u0435 \u043e\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f: \u0437\u043c\u0456\u043d\u044e\u044e\u0442\u044c\u0441\u044f \u043b\u0438\u0448\u0435 \u043f\u0435\u0440\u0435\u0434\u0430\u043d\u0456 \u043f\u043e\u043b\u044f. `slug` \u0437\u043c\u0456\u043d\u0438\u0442\u0438 \u043d\u0435 \u043c\u043e\u0436\u043d\u0430."
+            },
+            "GymSetDB": {
+                "properties": {
+                    "exercise": {
+                        "$ref": "#/components/schemas/ExerciseSnapshot"
+                    },
+                    "complex": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/ComplexMarker"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "type": {
+                        "type": "string",
+                        "const": "G",
+                        "title": "Type"
+                    },
+                    "reps": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0.0,
+                        "title": "Reps"
+                    },
+                    "time": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time",
+                        "description": "seconds"
+                    },
+                    "weight": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Weight",
+                        "description": "kilograms"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "exercise",
+                    "exercise_id",
+                    "type",
+                    "reps"
+                ],
+                "title": "GymSetDB"
+            },
+            "GymSetIn": {
+                "properties": {
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "type": {
+                        "type": "string",
+                        "const": "G",
+                        "title": "Type"
+                    },
+                    "reps": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0.0,
+                        "title": "Reps"
+                    },
+                    "time": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time",
+                        "description": "seconds"
+                    },
+                    "weight": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Weight",
+                        "description": "kilograms"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "exercise_id",
+                    "type",
+                    "reps"
+                ],
+                "title": "GymSetIn"
+            },
+            "HTTPValidationError": {
+                "properties": {
+                    "detail": {
+                        "items": {
+                            "$ref": "#/components/schemas/ValidationError"
+                        },
+                        "type": "array",
+                        "title": "Detail"
+                    }
+                },
+                "type": "object",
+                "title": "HTTPValidationError"
+            },
+            "PydanticObjectId": {
+                "type": "string",
+                "maxLength": 24,
+                "minLength": 24,
+                "pattern": "^[0-9a-f]{24}$",
+                "example": "5eb7cf5a86d9755df3a6c593"
+            },
+            "RelativeStrengthPoint": {
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Date"
+                    },
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "exercise_name": {
+                        "type": "string",
+                        "title": "Exercise Name"
+                    },
+                    "reps": {
+                        "type": "integer",
+                        "title": "Reps"
+                    },
+                    "weight_kg": {
+                        "type": "number",
+                        "title": "Weight Kg"
+                    },
+                    "body_weight_kg": {
+                        "anyOf": [
+                            {
+                                "type": "number"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Body Weight Kg"
+                    },
+                    "measurement_date": {
+                        "anyOf": [
+                            {
+                                "type": "string",
+                                "format": "date"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Measurement Date"
+                    },
+                    "relative_strength": {
+                        "anyOf": [
+                            {
+                                "type": "number"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Relative Strength",
+                        "description": "weight_kg / body_weight_kg"
+                    },
+                    "status": {
+                        "type": "string",
+                        "enum": [
+                            "ok",
+                            "insufficient_data"
+                        ],
+                        "title": "Status"
+                    },
+                    "training_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "date",
+                    "exercise_id",
+                    "exercise_name",
+                    "reps",
+                    "weight_kg",
+                    "body_weight_kg",
+                    "measurement_date",
+                    "relative_strength",
+                    "status",
+                    "training_id"
+                ],
+                "title": "RelativeStrengthPoint"
+            },
+            "SectionDB": {
+                "properties": {
+                    "kind": {
+                        "type": "string",
+                        "enum": [
+                            "warm_up",
+                            "lifting",
+                            "metcon",
+                            "accessory",
+                            "cool_down"
+                        ],
+                        "title": "Kind"
+                    },
+                    "format": {
+                        "type": "string",
+                        "enum": [
+                            "standard",
+                            "amrap",
+                            "emom",
+                            "for_time",
+                            "tabata"
+                        ],
+                        "title": "Format",
+                        "default": "standard"
+                    },
+                    "rounds": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Rounds"
+                    },
+                    "time_cap": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time Cap",
+                        "description": "seconds"
+                    },
+                    "items": {
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "$ref": "#/components/schemas/GymSetDB"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/WeightSetDB"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/CardioSetDB"
+                                }
+                            ],
+                            "discriminator": {
+                                "propertyName": "type",
+                                "mapping": {
+                                    "G": "#/components/schemas/GymSetDB",
+                                    "M": "#/components/schemas/CardioSetDB",
+                                    "W": "#/components/schemas/WeightSetDB"
+                                }
+                            }
+                        },
+                        "type": "array",
+                        "title": "Items"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "kind",
+                    "items"
+                ],
+                "title": "SectionDB",
+                "description": "References are already expanded, so `items` contain only sets."
+            },
+            "SectionIn": {
+                "properties": {
+                    "kind": {
+                        "type": "string",
+                        "enum": [
+                            "warm_up",
+                            "lifting",
+                            "metcon",
+                            "accessory",
+                            "cool_down"
+                        ],
+                        "title": "Kind"
+                    },
+                    "format": {
+                        "type": "string",
+                        "enum": [
+                            "standard",
+                            "amrap",
+                            "emom",
+                            "for_time",
+                            "tabata"
+                        ],
+                        "title": "Format",
+                        "default": "standard"
+                    },
+                    "rounds": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Rounds"
+                    },
+                    "time_cap": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time Cap",
+                        "description": "seconds"
+                    },
+                    "items": {
+                        "items": {
+                            "oneOf": [
+                                {
+                                    "$ref": "#/components/schemas/GymSetIn"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/WeightSetIn"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/CardioSetIn"
+                                },
+                                {
+                                    "$ref": "#/components/schemas/ComplexRefIn"
+                                }
+                            ],
+                            "discriminator": {
+                                "propertyName": "type",
+                                "mapping": {
+                                    "G": "#/components/schemas/GymSetIn",
+                                    "M": "#/components/schemas/CardioSetIn",
+                                    "W": "#/components/schemas/WeightSetIn",
+                                    "complex": "#/components/schemas/ComplexRefIn"
+                                }
+                            }
+                        },
+                        "type": "array",
+                        "minItems": 1,
+                        "title": "Items"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "kind",
+                    "items"
+                ],
+                "title": "SectionIn"
+            },
+            "StrengthRecord": {
+                "properties": {
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Date"
+                    },
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "exercise_name": {
+                        "type": "string",
+                        "title": "Exercise Name"
+                    },
+                    "reps": {
+                        "type": "integer",
+                        "title": "Reps"
+                    },
+                    "weight_kg": {
+                        "type": "number",
+                        "title": "Weight Kg"
+                    },
+                    "improvement_kg": {
+                        "anyOf": [
+                            {
+                                "type": "number"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Improvement Kg",
+                        "description": "Increase over previous record, null for the first record"
+                    },
+                    "training_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "date",
+                    "exercise_id",
+                    "exercise_name",
+                    "reps",
+                    "weight_kg",
+                    "improvement_kg",
+                    "training_id"
+                ],
+                "title": "StrengthRecord"
+            },
+            "TonnagePoint": {
+                "properties": {
+                    "group_by": {
+                        "type": "string",
+                        "enum": [
+                            "week",
+                            "exercise",
+                            "movement_pattern"
+                        ],
+                        "title": "Group By"
+                    },
+                    "tonnage": {
+                        "type": "number",
+                        "title": "Tonnage",
+                        "description": "Sum of W set weight * reps, in kilograms"
+                    },
+                    "sets": {
+                        "type": "integer",
+                        "title": "Sets"
+                    },
+                    "year": {
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Year"
+                    },
+                    "week": {
+                        "anyOf": [
+                            {
+                                "type": "integer"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Week"
+                    },
+                    "exercise_id": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/PydanticObjectId"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "exercise_name": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Exercise Name"
+                    },
+                    "movement_pattern": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Movement Pattern"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "group_by",
+                    "tonnage",
+                    "sets"
+                ],
+                "title": "TonnagePoint"
+            },
+            "TrainingIn": {
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "title": "Title"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Date",
+                        "description": "YYYY-MM-DD, no time, no time zone"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "sections": {
+                        "items": {
+                            "$ref": "#/components/schemas/SectionIn"
+                        },
+                        "type": "array",
+                        "minItems": 1,
+                        "title": "Sections"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "title",
+                    "date",
+                    "sections"
+                ],
+                "title": "TrainingIn"
+            },
+            "TrainingListOut": {
+                "properties": {
+                    "items": {
+                        "items": {
+                            "$ref": "#/components/schemas/TrainingOut"
+                        },
+                        "type": "array",
+                        "title": "Items"
+                    },
+                    "total": {
+                        "type": "integer",
+                        "title": "Total"
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "title": "Limit"
+                    },
+                    "offset": {
+                        "type": "integer",
+                        "title": "Offset"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "items",
+                    "total",
+                    "limit",
+                    "offset"
+                ],
+                "title": "TrainingListOut"
+            },
+            "TrainingOut": {
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "maxLength": 120,
+                        "minLength": 1,
+                        "title": "Title"
+                    },
+                    "date": {
+                        "type": "string",
+                        "format": "date",
+                        "title": "Date",
+                        "description": "YYYY-MM-DD, no time, no time zone"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "sections": {
+                        "items": {
+                            "$ref": "#/components/schemas/SectionDB"
+                        },
+                        "type": "array",
+                        "title": "Sections"
+                    },
+                    "schema_version": {
+                        "type": "integer",
+                        "title": "Schema Version",
+                        "default": 1
+                    },
+                    "user_id": {
+                        "type": "string",
+                        "format": "uuid",
+                        "title": "User Id"
+                    },
+                    "created_by": {
+                        "type": "string",
+                        "format": "uuid",
+                        "title": "Created By"
+                    },
+                    "created_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Created At"
+                    },
+                    "updated_at": {
+                        "type": "string",
+                        "format": "date-time",
+                        "title": "Updated At"
+                    },
+                    "id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "title",
+                    "date",
+                    "sections",
+                    "user_id",
+                    "created_by",
+                    "created_at",
+                    "updated_at",
+                    "id"
+                ],
+                "title": "TrainingOut"
+            },
+            "ValidationError": {
+                "properties": {
+                    "loc": {
+                        "items": {
+                            "anyOf": [
+                                {
+                                    "type": "string"
+                                },
+                                {
+                                    "type": "integer"
+                                }
+                            ]
+                        },
+                        "type": "array",
+                        "title": "Location"
+                    },
+                    "msg": {
+                        "type": "string",
+                        "title": "Message"
+                    },
+                    "type": {
+                        "type": "string",
+                        "title": "Error Type"
+                    },
+                    "input": {
+                        "title": "Input"
+                    },
+                    "ctx": {
+                        "type": "object",
+                        "title": "Context"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "loc",
+                    "msg",
+                    "type"
+                ],
+                "title": "ValidationError"
+            },
+            "WeeklyTonnageOut": {
+                "properties": {
+                    "year": {
+                        "type": "integer",
+                        "title": "Year",
+                        "description": "ISO week-numbering year"
+                    },
+                    "week": {
+                        "type": "integer",
+                        "title": "Week",
+                        "description": "ISO week number"
+                    },
+                    "movement_pattern": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Movement Pattern"
+                    },
+                    "tonnage": {
+                        "type": "number",
+                        "title": "Tonnage",
+                        "description": "sum of reps * weight, kilograms"
+                    },
+                    "sets": {
+                        "type": "integer",
+                        "title": "Sets"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "year",
+                    "week",
+                    "movement_pattern",
+                    "tonnage",
+                    "sets"
+                ],
+                "title": "WeeklyTonnageOut"
+            },
+            "WeightSetDB": {
+                "properties": {
+                    "exercise": {
+                        "$ref": "#/components/schemas/ExerciseSnapshot"
+                    },
+                    "complex": {
+                        "anyOf": [
+                            {
+                                "$ref": "#/components/schemas/ComplexMarker"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ]
+                    },
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "type": {
+                        "type": "string",
+                        "const": "W",
+                        "title": "Type"
+                    },
+                    "reps": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0.0,
+                        "title": "Reps"
+                    },
+                    "weight": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Weight",
+                        "description": "kilograms"
+                    },
+                    "rpe": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "maximum": 10.0,
+                                "minimum": 1.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Rpe"
+                    },
+                    "time": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time",
+                        "description": "seconds"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "exercise",
+                    "exercise_id",
+                    "type",
+                    "reps"
+                ],
+                "title": "WeightSetDB"
+            },
+            "WeightSetIn": {
+                "properties": {
+                    "exercise_id": {
+                        "$ref": "#/components/schemas/PydanticObjectId"
+                    },
+                    "comment": {
+                        "anyOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Comment"
+                    },
+                    "type": {
+                        "type": "string",
+                        "const": "W",
+                        "title": "Type"
+                    },
+                    "reps": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0.0,
+                        "title": "Reps"
+                    },
+                    "weight": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Weight",
+                        "description": "kilograms"
+                    },
+                    "rpe": {
+                        "anyOf": [
+                            {
+                                "type": "number",
+                                "maximum": 10.0,
+                                "minimum": 1.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Rpe"
+                    },
+                    "time": {
+                        "anyOf": [
+                            {
+                                "type": "integer",
+                                "exclusiveMinimum": 0.0
+                            },
+                            {
+                                "type": "null"
+                            }
+                        ],
+                        "title": "Time",
+                        "description": "seconds"
+                    }
+                },
+                "type": "object",
+                "required": [
+                    "exercise_id",
+                    "type",
+                    "reps"
+                ],
+                "title": "WeightSetIn"
+            }
+        },
+        "securitySchemes": {
+            "HTTPBearer": {
+                "type": "http",
+                "scheme": "bearer"
+            }
+        }
+    }
+}
