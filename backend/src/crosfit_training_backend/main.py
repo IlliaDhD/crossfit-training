@@ -8,6 +8,7 @@ from crosfit_training_backend.api.error_handlers import register_error_handlers
 from crosfit_training_backend.api.routes.complexes import router as complexes_router
 from crosfit_training_backend.api.routes.exercises import router as exercises_router
 from crosfit_training_backend.api.routes.me import router as me_router
+from crosfit_training_backend.api.routes.profile import router as profile_router
 from crosfit_training_backend.api.routes.stats import router as stats_router
 from crosfit_training_backend.api.routes.trainings import router as trainings_router
 from crosfit_training_backend.database import init_db
@@ -34,6 +35,7 @@ app.add_middleware(
     allow_headers=["Authorization", "Content-Type"],
 )
 app.include_router(me_router)
+app.include_router(profile_router)
 app.include_router(exercises_router)
 app.include_router(complexes_router)
 app.include_router(trainings_router)
