@@ -7,6 +7,7 @@ import {
   ViewChild,
   inject,
 } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import Keycloak from 'keycloak-js';
 
 interface Piece {
@@ -26,6 +27,7 @@ const COLORS = ['#ff4d6d', '#ffd166', '#06d6a0', '#4cc9f0', '#b388ff', '#ff9f1c'
 @Component({
   selector: 'app-welcome',
   standalone: true,
+  imports: [RouterLink],
   template: `
     <canvas #confetti class="confetti"></canvas>
 
@@ -47,6 +49,7 @@ const COLORS = ['#ff4d6d', '#ffd166', '#06d6a0', '#4cc9f0', '#b388ff', '#ff9f1c'
         </ul>
 
         <div class="actions">
+          <a class="open-app" routerLink="/exercises">Відкрити додаток</a>
           <button class="ghost" (click)="burst()">🎊 Ще конфеті</button>
           <button (click)="logout()">Вийти</button>
         </div>
@@ -136,6 +139,17 @@ const COLORS = ['#ff4d6d', '#ffd166', '#06d6a0', '#4cc9f0', '#b388ff', '#ff9f1c'
         transition: transform 0.15s;
       }
       button:hover { transform: translateY(-2px); }
+      .open-app {
+        border-radius: 12px;
+        padding: 0.7rem 1.4rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        background: #ff4d6d;
+        text-decoration: none;
+        transition: transform 0.15s;
+      }
+      .open-app:hover { transform: translateY(-2px); }
       button.ghost { background: rgba(255, 255, 255, 0.2); color: #fff; }
       @media (prefers-reduced-motion: reduce) {
         :host, .emoji { animation: none; }
